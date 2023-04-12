@@ -47,4 +47,7 @@
 
 (11) Time to utilize your "npm i react-router-dom"! We are going to create links and make the login/registration functional. 
 
-(12)
+(12) In [app.js], you are going to:
+    import {Route, Routes} from "react-router-dom";
+
+(13) In [index.js], you are going to wrap <App /> with <BrowserRouter></BrowserRouter>. 
