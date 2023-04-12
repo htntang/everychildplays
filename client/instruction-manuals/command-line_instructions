@@ -3,6 +3,13 @@ Precursor:
         - It provides minimal and solid feature set to kick-start a web application.
         - Examples of websites that are powered by React includes Facebook, Instagram, Netflix, Code Academy, Reddit, etc.
 
+Sources:
+    -https://create-react-app.dev/docs/getting-started/  
+
+    -https://www.codecademy.com/article/how-to-create-a-react-app  
+      
+    -https://www.codecademy.com/paths/web-development/tracks/front-end-applications-with-react/modules/react-development-setup-and-ravenous-part-1/informationals/ready-react-developer-tools  
+
 (1) npx create-react-app .
         - With NodeJS/NPM installed on your machine, you can just run the following lines.
         - The project layout should include many files, such as "node_modules", ".gitignore", "package.json", and a "src file".
