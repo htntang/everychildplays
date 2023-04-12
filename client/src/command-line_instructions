@@ -13,4 +13,5 @@ Precursor:
 (3) npm i react-router-dom
     - Contains bindings for using React Router in web applications.
 
-(4)
+(4) npm i react-scripts@latest
+    - React Create App toolchain uses the react-scripts package to build and run the application. 
