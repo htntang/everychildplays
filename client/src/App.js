@@ -16,6 +16,7 @@ function App() {
         
       </div>
       </div>
+
       <div className="search-button">
       <button class="search">Find Playground</button>
       <button class="search">Playground Map</button>

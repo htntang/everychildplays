@@ -41,9 +41,12 @@ button.navigation{
   padding: 12px 20px;
   font-size: 12px;
   font-weight:bold;
-  border:0;
+  border:4px double #cccccc;
+  border-radius: 10px;
   margin-right: 5px;
   position:flex;
+  cursor:pointer;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 button.search{
@@ -54,10 +57,18 @@ button.search{
   display:inline-block;
   font-size: 12px;
   font-weight:bold;
-  border:0;
+  border:4px double #cccccc;
+  border-radius: 10px;
   position:flex;
   margin-right:5px;
-  margin-top:50px;
+  margin-top:20px;
+  cursor: pointer;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+div.search-button{
+  text-align: center;
+  position:relative;
 }
 
 .row{
