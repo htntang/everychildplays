@@ -1,0 +1,4 @@
+(1) Install "npx create-react-app ."
+(2) Start the app with "npm start"
+(3) Once you are ready to import {Links}, {Routes}, and {Route},
+install "npm i react-router-dom"
