@@ -1,4 +1,11 @@
 (1) Install "npx create-react-app ."
+
 (2) Start the app with "npm start"
-(3) Once you are ready to import {Links}, {Routes}, and {Route},
+
+(3) Delete the the logo file as well as the code that pertains to the logo.
+(4) Delete the default "app.css"
+
+(5) Delete most of the "app.js" info
+
+(6) Once you are ready to import {Links}, {Routes}, and {Route},
 install "npm i react-router-dom"
