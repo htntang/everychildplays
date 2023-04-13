@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
+
 export default function Header(){
     return(
         <header>
-            <a href="/" className="logo">Inclusive Playworks™</a>
+            <Link to ="/" className="logo">Inclusive Playworks™</Link>
             <nav>
-                <button class="navigation">Login</button>
-                <button class="navigation">Register</button>
+                <Link to="/login" class="button-navigation">Login </Link>
+                <Link to="/register" class="button-navigation"> Register</Link>
             </nav>
         </header>
     );

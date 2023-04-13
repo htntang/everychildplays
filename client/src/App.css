@@ -33,15 +33,7 @@ header a.logo{
   font-size: 28px;  
 }
 
-button.navigation{
-  background-color:#ed9556;
-  color:#fffff0;
-  text-decoration: none;
-  display:inline-block;
-  padding: 12px 20px;
-  font-size: 12px;
-  font-weight:bold;
-  border:4px double #cccccc;
+header a.button{
   border-radius: 10px;
   margin-right: 5px;
   position:flex;
