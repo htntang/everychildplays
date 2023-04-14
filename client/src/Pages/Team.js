@@ -1,5 +1,5 @@
 export default function Team() {
     return(
-        <div>meet the team</div>
+        <h1>Meet the Team</h1>
     );
 }

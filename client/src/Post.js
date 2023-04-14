@@ -12,8 +12,8 @@ export default function Post(){
         </div>
   
         <div className="search-button">
-        <button class="search">Find Playground</button>
-        <button class="search">Playground Map</button>
+        <button class="search">Playground Directory</button>
+        <button class="search">Playground Search</button>
         </div>
       </body>
     );

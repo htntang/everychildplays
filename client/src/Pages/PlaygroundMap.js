@@ -1,5 +1,5 @@
 export default function PlaygroundMap() {
     return(
-        <div>playground map</div>
+        <h1>Playground Map</h1>
     );
 }

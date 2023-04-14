@@ -1,5 +1,5 @@
 export default function SearchPlaygrounds() {
     return(
-        <div>search playgrounds</div>
+        <h1>Search Playgrounds</h1>
     );
 }
