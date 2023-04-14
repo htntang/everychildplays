@@ -34,7 +34,7 @@ header{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
-ul {
+ul.navbar{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -49,7 +49,6 @@ li {
 li a {
   display: block;
   color: #fffff0;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
@@ -171,4 +170,19 @@ div.about-us-img{
   display:block;
   margin-left:auto;
   margin-right:auto
+}
+
+ul.gov-org{
+background-color: none;
+align-items:left;
+}
+
+ul.books{
+  background-color: none;
+  align-items:left;
+}
+
+div.book-summary{
+  align-items:left;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }

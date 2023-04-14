@@ -1,6 +1,6 @@
 export default function Navbar() {
     return<nav className="navbar">
-        <ul>
+        <ul className="navbar">
             <li><a href="/">Home</a></li>
             <li><a href="/search">Search Playgrounds</a></li>
             <li><a href="/map">Playground Map</a></li>
