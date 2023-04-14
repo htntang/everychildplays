@@ -1,11 +1,11 @@
 export default function Navbar() {
-    return<nav className="nav">
+    return<nav className="navbar">
         <ul>
-            <a href="/">Search Playgrounds</a><br></br>
-            <a href="/">Playground Map</a><br></br>
-            <a href="/">Resources</a><br></br>
-            <a href="/about">About Us</a><br></br>
-            <a href="/team">Meet the Team</a>
+            <li><a href="/search">Search Playgrounds</a></li>
+            <li><a href="/map">Playground Map</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/team">Meet the Team</a></li>
         </ul>
     </nav>
 }
