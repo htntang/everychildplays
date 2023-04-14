@@ -30,7 +30,8 @@ export default function Books() {
                     
                     
                     <li>
-                    <a href="https://a.co/d/9nMx6dk"><i>The Power of Neurodiversity: Unleashing the Advantages of Your Differently Wired Brain</i>, by <b>Thomas Armstrong</b></a></li><br></br><br></br><br></br>
+                    <div className="bookcover"><img src="https://kbimages1-a.akamaihd.net/Images/22e67a56-8e91-4f4f-8d77-5403fa4349bb/380/515/85/false/null.jpg?method=scale"></img></div><br></br>
+                    <a href="https://a.co/d/9nMx6dk"><i>The Power of Neurodiversity: Unleashing the Advantages of Your Differently Wired Brain</i>, by <b>Thomas Armstrong</b></a></li><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                     <div className="book-summary">From ADHD and dyslexia to autism, the number of diagnosis categories listed by the American Psychiatric Association has tripled in the last fifty years. With so many people affected, it is time to revisit our perceptions of people with disabilities.
                         <br></br>
                         <br></br>
@@ -40,13 +41,15 @@ export default function Books() {
                         A manifesto as well as a keenly intelligent look at "disability," The Power of Neurodiversity is a must for parents, teachers, and anyone who is looking to learn more about neurodivergence.</div>
                         <br></br>
                     
-            <li><a href="https://a.co/d/h53ZXnB"><i>Neurotribes: The Legacy of Autism and the Future of Neurodiversity</i>, by <b>Steve Silberman (Author), Oliver Sacks (Foreword)</b></a></li>
+            <li><div className="bookcover"><img src="https://m.media-amazon.com/images/I/81ujnpx6aOL.jpg"></img></div><br></br>
+            <a href="https://a.co/d/h53ZXnB"><i>Neurotribes: The Legacy of Autism and the Future of Neurodiversity</i>, by <b>Steve Silberman (Author), Oliver Sacks (Foreword)</b></a></li>
                 <br></br>
                 <br></br>
                 <br></br>
                 <div className="book-summary">What is autism? A lifelong disability, or a naturally occurring form of cognitive difference akin to certain forms of genius? In truth, it is all of these things and more—and the future of our society depends on our understanding it. Wired reporter Steve Silberman unearths the secret history of autism, long suppressed by the same clinicians who became famous for discovering it, and finds surprising answers to the crucial question of why the number of diagnoses has soared in recent years.  Going back to the earliest days of autism research, Silberman offers a gripping narrative of Leo Kanner and Hans Asperger, the research pioneers who defined the scope of autism in profoundly different ways; he then goes on to explore the game-changing concept of neurodiversity. NeuroTribes considers the idea that neurological differences such as autism, dyslexia, and ADHD are not errors of nature or products of the toxic modern world, but the result of natural variations in the human genome. This groundbreaking bookwill reshape our understanding of the history, meaning, function, and implications of neurodiversity in our world.</div>
                 <br></br>
-            <li><a href="https://a.co/d/6povSPC"><i>Uniquely Human: Updated and Expanded: A Different Way of Seeing Autism</i>, by <b>Barry M. Prizant Ph.D. (Author), with Tom Fields-Meyer</b></a></li>
+            <li><div className="bookcover"><img src="https://m.media-amazon.com/images/I/61G1VkkjTnL.jpg"></img></div><br></br>
+            <a href="https://a.co/d/6povSPC"><i>Uniquely Human: Updated and Expanded: A Different Way of Seeing Autism</i>, by <b>Barry M. Prizant Ph.D. (Author), with Tom Fields-Meyer</b></a></li><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <br></br>
                 <br></br>
                 <br></br>
