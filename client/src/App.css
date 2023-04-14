@@ -18,7 +18,7 @@ img.headshot{
 
 
 body{
-  background-color:#b9b1ff;
+  background-color:#aca6dd;
   color: #fffff0;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -136,7 +136,7 @@ input{
 button{
   width: 100%;
   display: block;
-  background-color: #b9b1ff;
+  background-color: #f2dd80;
   color: #fffff0;
   border:4px double #cccccc;
   border-radius: 10px;
