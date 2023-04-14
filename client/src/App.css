@@ -43,7 +43,7 @@ ul {
 }
 
 li {
-  float: left;
+  float:left;
 }
 
 li a {
@@ -83,7 +83,7 @@ header a.button{
 }
 
 button.search{
-  width: 30%;
+  width: 40%;
   background-color:#b9b1ff;
   color:#fffff0;
   padding: 12px 20px;
@@ -95,7 +95,7 @@ button.search{
   border-radius: 10px;
   position:flex;
   margin-right:5px;
-  margin-top: 80px;
+  margin-top:80px;
   cursor: pointer;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -156,4 +156,19 @@ div.team{
 
 div.team a{
   color:white;
+}
+
+div.inceptionu{
+  margin-top: 50px;
+  max-width: 85%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+div.about-us-img{
+  max-width:100%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto
 }

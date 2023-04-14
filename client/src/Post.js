@@ -1,5 +1,6 @@
 export default function Post(){
     return(
+        <>
         <body>
         <div className="row">
         <div className="column">
@@ -7,7 +8,6 @@ export default function Post(){
         </div>
         <div className="column">
           <img src="https://i.imgur.com/ZYScK1W.png" alt="brand logo"></img>
-          
         </div>
         </div>
   
@@ -15,6 +15,20 @@ export default function Post(){
         <button class="search">Playground Directory</button>
         <button class="search">Playground Search</button>
         </div>
-      </body>
+
+        <div className="inceptionu">
+          <div className="row">
+            <div className="column">
+            <img src="https://i.imgur.com/w1wuayu.png"></img>
+              </div>
+          <div className="column">
+          <img src="https://i.imgur.com/radlFWM.png"></img>
+          </div>
+          </div>
+        </div>
+
+        </body>
+        </>
+        
     );
 }
