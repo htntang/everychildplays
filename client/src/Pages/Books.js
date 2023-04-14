@@ -6,30 +6,40 @@ export default function Books() {
         <h2><b><i>Books</i></b></h2>
         <h3><u>Non-Fiction</u></h3>
         <ul className="books">
-            <li><a href="https://a.co/d/1CE4vsb"><i>In A Different Key: The Story of Autism</i>, by <b>John Donvan and Caren Zucker</b></a></li>
-                <br></br>
-                <br></br>
-                <br></br>
-                <div className="book-summary">In 1938, Donald Triplett of Forest, Mississippi, became the first child diagnosed with autism. Beginning with his family’s odyssey, In a Different Key tells the extraordinary story of this often misunderstood condition, from the civil rights battles waged by the families of those who have it to the fierce debates among scientists over how to define and treat it. 
-                <br></br>
-                <br></br>
-                Unfolding over decades, In a Different Key is a beautifully rendered history of people determined to secure a place in the world for those with autism—by liberating children from dank institutions, campaigning for their right to go to school, challenging expert opinion on what it means to have autism, and persuading society to accept those who are different. 
-                <br></br>
-                <br></br>
-                This is also a story of fierce controversies—from the question of whether there is truly an autism “epidemic,” and whether vaccines played a part in it; to scandals involving “facilitated communication,” one of many unsuccessful treatments; to stark disagreements about whether scientists should pursue a cure for autism; to compelling evidence that Hans Asperger, discoverer of the syndrome named after him, participated in the Nazi program that consigned disabled children to death.
-                <br></br>
-                <br></br>
-                By turns intimate and panoramic, In a Different Key takes us on a journey from an era when families were shamed and children were condemned to institutions to one in which a cadre of people with autism push not simply for inclusion, but for a new understanding of autism: as difference rather than disability.</div>
-                <br></br>
-            <li><a href="https://a.co/d/9nMx6dk"><i>The Power of Neurodiversity: Unleashing the Advantages of Your Differently Wired Brain</i>, by <b>Thomas Armstrong</b></a></li><br></br><br></br><br></br>
-            <div className="book-summary">From ADHD and dyslexia to autism, the number of diagnosis categories listed by the American Psychiatric Association has tripled in the last fifty years. With so many people affected, it is time to revisit our perceptions of people with disabilities.
-                <br></br>
-                <br></br>
-                Bestselling author, psychologist, and educator Thomas Armstrong illuminates a new understanding of neuropsychological disorders. He argues that if they are a part of the natural diversity of the human brain, they cannot simply be defined as illnesses. Armstrong explores the evolutionary advantages, special skills, and other positive dimensions of these conditions.
-                <br></br>
-                <br></br>
-                A manifesto as well as a keenly intelligent look at "disability," The Power of Neurodiversity is a must for parents, teachers, and anyone who is looking to learn more about neurodivergence.</div>
-                <br></br>
+            <li><div className="bookcover"><img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91d+CLajViL.jpg"></img></div>
+                    <a href="https://a.co/d/1CE4vsb"><i>In A Different Key: The Story of Autism</i>, by <b>John Donvan and Caren Zucker</b></a></li>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                    <div className="book-summary">In 1938, Donald Triplett of Forest, Mississippi, became the first child diagnosed with autism. Beginning with his family’s odyssey, In a Different Key tells the extraordinary story of this often misunderstood condition, from the civil rights battles waged by the families of those who have it to the fierce debates among scientists over how to define and treat it. 
+                        <br></br>
+                        <br></br>
+                        Unfolding over decades, In a Different Key is a beautifully rendered history of people determined to secure a place in the world for those with autism—by liberating children from dank institutions, campaigning for their right to go to school, challenging expert opinion on what it means to have autism, and persuading society to accept those who are different. 
+                        <br></br>
+                        <br></br>
+                        This is also a story of fierce controversies—from the question of whether there is truly an autism “epidemic,” and whether vaccines played a part in it; to scandals involving “facilitated communication,” one of many unsuccessful treatments; to stark disagreements about whether scientists should pursue a cure for autism; to compelling evidence that Hans Asperger, discoverer of the syndrome named after him, participated in the Nazi program that consigned disabled children to death.
+                        <br></br>
+                        <br></br>
+                        By turns intimate and panoramic, In a Different Key takes us on a journey from an era when families were shamed and children were condemned to institutions to one in which a cadre of people with autism push not simply for inclusion, but for a new understanding of autism: as difference rather than disability.</div>
+                        <br></br>
+                        
+            
+
+               
+                        <img src=""></img>
+                    
+                    
+                    <li>
+                    <a href="https://a.co/d/9nMx6dk"><i>The Power of Neurodiversity: Unleashing the Advantages of Your Differently Wired Brain</i>, by <b>Thomas Armstrong</b></a></li><br></br><br></br><br></br>
+                    <div className="book-summary">From ADHD and dyslexia to autism, the number of diagnosis categories listed by the American Psychiatric Association has tripled in the last fifty years. With so many people affected, it is time to revisit our perceptions of people with disabilities.
+                        <br></br>
+                        <br></br>
+                        Bestselling author, psychologist, and educator Thomas Armstrong illuminates a new understanding of neuropsychological disorders. He argues that if they are a part of the natural diversity of the human brain, they cannot simply be defined as illnesses. Armstrong explores the evolutionary advantages, special skills, and other positive dimensions of these conditions.
+                        <br></br>
+                        <br></br>
+                        A manifesto as well as a keenly intelligent look at "disability," The Power of Neurodiversity is a must for parents, teachers, and anyone who is looking to learn more about neurodivergence.</div>
+                        <br></br>
+                    
             <li><a href="https://a.co/d/h53ZXnB"><i>Neurotribes: The Legacy of Autism and the Future of Neurodiversity</i>, by <b>Steve Silberman (Author), Oliver Sacks (Foreword)</b></a></li>
                 <br></br>
                 <br></br>
@@ -42,7 +52,7 @@ export default function Books() {
                 <br></br>
                 <div className="book-summary">Autism therapy typically focuses on ridding individuals of “autistic” symptoms such as difficulties interacting socially, communication problems, sensory challenges, and repetitive behavior patterns. Now, this updated and expanded edition of Dr. Barry M. Prizant’s Uniquely Human tackles new language such as shifting from “person-first language” to “identity-first language,” diversity of identity in the autism sphere, and the future of autistic advocacy by amplifying the voices of autistic and neurodivergent individuals.</div>
                 <br></br>    
-        </ul>
+                </ul>
 
         <br></br>
         <br></br>
@@ -62,7 +72,8 @@ export default function Books() {
             <li><a href=""></a></li><br></br>
             <li><a href=""></a></li><br></br>
             <li><a href=""></a></li><br></br>
-        </ul>
+            </ul>
+        
 
         <br></br>
         <br></br>

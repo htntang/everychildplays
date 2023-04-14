@@ -32,7 +32,7 @@ function App() {
         <Route path="/resources" element={ <Resources /> } />
       </Route>
     </Routes>
-    </>
+  </>
   );
 }
 
