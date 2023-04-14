@@ -27,6 +27,36 @@ header{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #b9b1ff;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #fffff0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ed9556;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 header a{
   text-decoration: none;
   color: inherit;

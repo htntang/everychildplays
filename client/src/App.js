@@ -9,6 +9,9 @@ import RegistrationPage from './Pages/RegistrationPage';
 import Navbar from './Pages/navbar';
 import About from './Pages/About';
 import Team from './Pages/Team';
+import PlaygroundMap from './Pages/PlaygroundMap';
+import SearchPlaygrounds from './Pages/SearchPlaygrounds';
+import Resources from './Pages/Resources';
 
 function App() {
   return(
@@ -22,6 +25,9 @@ function App() {
         <Route path="/register" element={ <RegistrationPage /> } />
         <Route path="/about" element={ <About />} />
         <Route path="/team" element={ <Team /> } />
+        <Route path="/map" element={ <PlaygroundMap /> } />
+        <Route path="/search" element={ <SearchPlaygrounds /> } />
+        <Route path="/resources" element={ <Resources /> } />
       </Route>
     </Routes>
     </>
