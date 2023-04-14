@@ -148,3 +148,12 @@ form h1{
 h1{
   text-align:center;
 }
+
+div.team{
+  text-align: center;
+  display:inline-block;
+}
+
+div.team a{
+  color:white;
+}
