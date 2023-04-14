@@ -11,17 +11,21 @@ img{
   max-width:100%;
 }
 
+img.headshot{
+  max-width:100%;
+}
+
 
 
 body{
-  background-color:#f2dd80;
+  background-color:#b9b1ff;
   color: #fffff0;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 main {
   padding:10px;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -39,7 +43,7 @@ ul.navbar{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #b9b1ff;
+  background-color: #f2dd80;
 }
 
 li {
@@ -83,7 +87,7 @@ header a.button{
 
 button.search{
   width: 40%;
-  background-color:#b9b1ff;
+  background-color:#f2dd80;
   color:#fffff0;
   padding: 12px 20px;
   text-decoration: none;
@@ -94,7 +98,7 @@ button.search{
   border-radius: 10px;
   position:flex;
   margin-right:5px;
-  margin-top:80px;
+  margin-top:20px;
   cursor: pointer;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -184,5 +188,17 @@ ul.books{
 
 div.book-summary{
   align-items:left;
+  font-size: smaller;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body.bio{
+  font-size:smaller;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div.inceptionu-team{
+  margin:0 auto;
+  margin-top:40px;
+  max-width:40%;
 }

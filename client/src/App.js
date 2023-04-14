@@ -11,6 +11,7 @@ import About from './Pages/About';
 import Team from './Pages/Team';
 import PlaygroundMap from './Pages/PlaygroundMap';
 import SearchPlaygrounds from './Pages/SearchPlaygrounds';
+import Books from './Pages/Books';
 import Resources from './Pages/Resources';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/team" element={ <Team /> } />
         <Route path="/map" element={ <PlaygroundMap /> } />
         <Route path="/search" element={ <SearchPlaygrounds /> } />
+        <Route path="/books" element={ <Books /> } />
         <Route path="/resources" element={ <Resources /> } />
       </Route>
     </Routes>
