@@ -5,8 +5,11 @@ const createUser = async (req, res) => {
     try {
       const { username, email, password, } = req.body;
   
-      const existingUser = await User.findOne({ email });
-      if (existingUser) return res.status(400).json({ message: 'User with this email already exists' });
+      const existingUsername = await User.findOne({ username });
+      if (existingUsername) return res.status(400).json({ message: 'Username already taken, please choose another username' });
+
+      const existingEmail = await User.findOne({ email });
+      if (existingEmail) return res.status(400).json({ message: 'User with this email already exists' });
   
       const newUser = new User({ username, email, password });
   
@@ -19,10 +22,10 @@ const createUser = async (req, res) => {
     }
   };
 
-// Get user by username
-const getUserByUsername = async (req, res) => {
+// Get user by id
+const getUserById = async (req, res) => {
     try {
-      const user = await User.findOne({ username: req.params.username });
+        const user = await User.findById(req.params.id).select("-password");
       if (!user) {
         return res.status(404).json({ error: 'User not found' });
       }
@@ -33,17 +36,20 @@ const getUserByUsername = async (req, res) => {
     }
   };
 
-// Update user by username
-const updateUserByUsername = async (req, res) => {
+// Update user by id
+const updateUserById = async (req, res) => {
     try {
-      const { username, email, password } = req.body;
-      const user = await User.findOne({ username });
+      let user = await User.findById(req.params.id);
       if (!user) {
         return res.status(404).json({ error: 'User not found' });
       }
-      user.email = email;
-      user.password = password;
-      await user.save();
+
+      user = await User.findByIdAndUpdate(
+        req.params.id,
+        { $set: req.body },
+        { new: true }
+      );
+
       res.json(user);
     } catch (error) {
       console.error(error.message);
@@ -51,13 +57,15 @@ const updateUserByUsername = async (req, res) => {
     }
   };
 
-// Delete user by username
-const deleteUserByUsername = async (req, res) => {
+// Delete user by id
+const deleteUserById = async (req, res) => {
     try {
-      const user = await User.findOneAndDelete({ username: req.params.username });
+        let user = await User.findById(req.params.id);
       if (!user) {
         return res.status(404).json({ error: 'User not found' });
       }
+
+      await User.findByIdAndRemove(req.params.id);
       res.json({ message: 'User deleted successfully' });
     } catch (error) {
       console.error(error.message);
@@ -65,4 +73,4 @@ const deleteUserByUsername = async (req, res) => {
     }
   };
   
-export { createUser, getUserByUsername, updateUserByUsername, deleteUserByUsername }
+export { createUser, getUserById, updateUserById, deleteUserById }
