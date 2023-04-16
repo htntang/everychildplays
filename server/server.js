@@ -1,7 +1,8 @@
 import express from "express"
 import dotenv from "dotenv"
-import { connectDB } from "./config/db.js"
-import { userRouter } from "./routes/userRoutes.js"
+import connectDB from "./config/db.js"
+import userRouter from "./routes/userRoutes.js"
+import playgroundRouter from "./routes/playgroundRoutes.js"
 
 
 dotenv.config()
@@ -14,6 +15,7 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
 
+app.use('/playgrounds', playgroundRouter);
 app.use('/users', userRouter);
 
 
