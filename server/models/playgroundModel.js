@@ -19,25 +19,21 @@ const playgroundSchema = new mongoose.Schema({
       required: true,
       select: false // exclude this field from query results
     },
-    accessibilityFeatures: {
-      type: [String],
-      required: true
+    description: {
+        type: String,
+        required: true
     },
-    safetyFeatures: {
-      type: [String],
-      required: true
-    },
+    pictures: [{
+        type: String,
+    }],
+    accessibilityFeatures: [{
+        type: String,
+    }],
+    safetyFeatures: [{
+        type: String,
+    }],
     ageRange: {
       type: String,
-      required: true
-    },
-    description: {
-      type: String,
-      required: true
-    },
-    images: {
-      type: [String],
-      required: true
     },
     reviews: [
       {

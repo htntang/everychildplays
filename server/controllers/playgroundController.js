@@ -1,4 +1,4 @@
-import Playground from '../models/playgroundModels.js';
+import Playground from '../models/playgroundModel.js';
 
 // Create a new playground
 const createPlayground = async (req, res) => {
@@ -62,4 +62,8 @@ const deletePlaygroundById = async (req, res) => {
   }
 };
 
-export { createPlayground, getAllPlaygrounds, getPlaygroundById, updatePlaygroundById, deletePlaygroundById };
+export { createPlayground, 
+        getAllPlaygrounds, 
+        getPlaygroundById, 
+        updatePlaygroundById, 
+        deletePlaygroundById };

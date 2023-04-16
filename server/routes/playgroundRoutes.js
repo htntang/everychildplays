@@ -1,7 +1,11 @@
 import express from 'express';
-import { createPlayground, getAllPlaygrounds, getPlaygroundById, updatePlaygroundById, deletePlaygroundById } from '../controllers/playgrounds';
+import { createPlayground, 
+        getAllPlaygrounds, 
+        getPlaygroundById, 
+        updatePlaygroundById, 
+        deletePlaygroundById } from '../controllers/playgroundController.js';
 
-const router = express.Router();
+const playgroundRouter = express.Router();
 
 playgroundRouter.post('/create', createPlayground);
 playgroundRouter.get('/', getAllPlaygrounds);
