@@ -55,14 +55,35 @@ export default function Books() {
                 <br></br>
                 <div className="book-summary">Autism therapy typically focuses on ridding individuals of “autistic” symptoms such as difficulties interacting socially, communication problems, sensory challenges, and repetitive behavior patterns. Now, this updated and expanded edition of Dr. Barry M. Prizant’s Uniquely Human tackles new language such as shifting from “person-first language” to “identity-first language,” diversity of identity in the autism sphere, and the future of autistic advocacy by amplifying the voices of autistic and neurodivergent individuals.</div>
                 <br></br>    
-                </ul>
+            <li><a href="https://www.amazon.ca/Divergent-Mind-Thriving-World-Designed/dp/0062876805/ref=d_pd_sbs_sccl_2_2/137-6182810-5236307?pd_rd_w=Dqzlm&content-id=amzn1.sym.c1849561-aea0-48eb-b576-ba648ed69471&pf_rd_p=c1849561-aea0-48eb-b576-ba648ed69471&pf_rd_r=Z5ME4Z43CXRA35ZK8FX8&pd_rd_wg=XhWHS&pd_rd_r=1fd6b82d-b319-4352-afe3-0c72eee65588&pd_rd_i=0062876805&psc=1"><i>Divergent Mind: Thriving in a World That Wasn't Designed for You</i>, by<b> Jenara Nerenberg.</b></a>
+                <div className="book-summary">A paradigm-shifting study of neurodivergent women—those with ADHD, autism, synesthesia, high sensitivity, and sensory processing disorder—exploring why these traits are overlooked in women and how society benefits from allowing their unique strengths to flourish.
+                </div>
+                </li>
+                <br></br> 
+                <br></br>   
 
+            <li><a href="https://www.amazon.ca/NeuroDiversity-Birth-Idea-Judy-Singer/dp/064815470X/ref=d_pd_sbs_sccl_2_1/137-6182810-5236307?pd_rd_w=Dqzlm&content-id=amzn1.sym.c1849561-aea0-48eb-b576-ba648ed69471&pf_rd_p=c1849561-aea0-48eb-b576-ba648ed69471&pf_rd_r=Z5ME4Z43CXRA35ZK8FX8&pd_rd_wg=XhWHS&pd_rd_r=1fd6b82d-b319-4352-afe3-0c72eee65588&pd_rd_i=064815470X&psc=1"><i>NeuroDiversity: The Birth of an Idea</i>, by <b>Judy Singer</b></a>
+            <div className="book-summary">Judy Singer is generally credited with the coinage of the word that became the banner for the last great social movement to emerge from the 20th century. The word itself was just one of many ideas in this work, her 1998 Honours thesis, a pioneering sociological work that mapped out the emergence of a new category of disability that, till then, had no name. And in the process, prefigured a new paradigm within the disability rights movement of the time</div>
+            <br></br>
+            </li>  
+
+            <li><a href="https://www.amazon.ca/Unmasking-Autism-Discovering-Faces-Neurodiversity/dp/0593235231/ref=d_pd_sbs_sccl_2_5/137-6182810-5236307?pd_rd_w=Dqzlm&content-id=amzn1.sym.c1849561-aea0-48eb-b576-ba648ed69471&pf_rd_p=c1849561-aea0-48eb-b576-ba648ed69471&pf_rd_r=Z5ME4Z43CXRA35ZK8FX8&pd_rd_wg=XhWHS&pd_rd_r=1fd6b82d-b319-4352-afe3-0c72eee65588&pd_rd_i=0593235231&psc=1"><i>Unmasking Autism: Discovering the New Faces of Neurodiversity</i>, by <b>Devon Price</b></a>
+            <div className="book-summary">A deep dive into the spectrum of Autistic experience and the phenomenon of masked Autism, giving individuals the tools to safely uncover their true selves while broadening society’s narrow understanding of neurodiversity
+                </div>
+                <br></br>
+                <br></br></li>
+        </ul>
+
+        <br></br>
+        <br></br>
         <br></br>
         <br></br>
         <br></br>
 
         <h3><u>Fiction</u></h3>
+
         <ul className="books">
+
         <li><a href="https://a.co/d/4i5TBeN"><i>The Reason I Jump: The Inner Voice of a Thirteen-Year-Old Boy with Autism</i>, by <b>Naoki Higashida (Author), and KA Yoshida (Translator)</b></a></li>
                 <br></br>
                 <br></br>
@@ -72,7 +93,6 @@ export default function Books() {
                 <br></br>
                 This book is mesmerizing proof that inside an autistic body is a mind as subtle, curious, and caring as anyone else's.</div>
                 <br></br>
-            <li><a href=""></a></li><br></br>
             <li><a href=""></a></li><br></br>
             <li><a href=""></a></li><br></br>
             </ul>
