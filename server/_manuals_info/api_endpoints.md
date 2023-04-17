@@ -1,20 +1,20 @@
 Each API endpoint begins with http://localhost:5005
 
 # Playgrounds
-createPlayground        POST /playgrounds/create 
-getAllPlaygrounds       GET /playgrounds
-getPlaygroundById       GET /playgrounds/:id
-updatePlaygroundById    PATCH /playgrounds/:id
-deletePlaygroundById    DELETE /playgrounds/:id
+createPlayground        POST /api/playgrounds/create 
+getAllPlaygrounds       GET /api/playgrounds
+getPlaygroundById       GET /api/playgrounds/:id
+updatePlaygroundById    PATCH /api/playgrounds/:id
+deletePlaygroundById    DELETE /api/playgrounds/:id
 
 # Users
-createUser              POST /users/register
-getUserById             GET /users/:id
-updateUserById          PATCH /users/:id
-deleteUserById          DELETE /users/:id
+createUser              POST /api/users/register
+getUserById             GET /api/users/:id
+updateUserById          PATCH /api/users/:id
+deleteUserById          DELETE /api/users/:id
 
 # Reviews
-createReview            POST /reviews/create
-getAllReviews           GET /playgrounds/:playgroundId/reviews
-updateReview            PATCH /reviews/:id
-deleteReview            DELETE /reviews/:id
+createReview            POST /api/reviews/create
+getAllReviews           GET /api/playgrounds/:playgroundId/reviews
+updateReview            PATCH /api/reviews/:id
+deleteReview            DELETE /api/reviews/:id

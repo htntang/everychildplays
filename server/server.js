@@ -16,9 +16,9 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
 
-app.use('/playgrounds', playgroundRouter);
-app.use('/users', userRouter);
-app.use('/reviews', reviewRouter);
+app.use('/api/playgrounds', playgroundRouter);
+app.use('/api/users', userRouter);
+app.use('/api/reviews', reviewRouter);
 
 
 app.listen(port, () => console.log(`Server started on port ${port}`))
