@@ -206,3 +206,8 @@ div.inceptionu-team{
 div.bookcover{
   max-width:20%;
 }
+
+h2.contact-form{
+  margin: 0 auto;
+  text-align: center;
+}

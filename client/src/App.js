@@ -13,6 +13,7 @@ import PlaygroundMap from './Pages/PlaygroundMap';
 import SearchPlaygrounds from './Pages/SearchPlaygrounds';
 import Books from './Pages/Books';
 import Resources from './Pages/Resources';
+import Contact from './Pages/Contact';
 
 function App() {
   return(
@@ -30,6 +31,7 @@ function App() {
         <Route path="/search" element={ <SearchPlaygrounds /> } />
         <Route path="/books" element={ <Books /> } />
         <Route path="/resources" element={ <Resources /> } />
+        <Route path="/contactus" element={ <Contact />} />
       </Route>
     </Routes>
   </>
