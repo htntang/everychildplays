@@ -18,7 +18,7 @@ img.headshot{
 
 
 body{
-  background-color:#aca6dd;
+  background-color:#AEADF0;
   color: #fffff0;
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -43,7 +43,7 @@ ul.navbar{
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #f2dd80;
+  background-color: #AEC595;
 }
 
 li {
@@ -58,7 +58,7 @@ li a {
 }
 
 li a:hover {
-  background-color: #ed9556;
+  background-color: #C96480;
 }
 
 ul {
@@ -87,7 +87,7 @@ header a.button{
 
 button.search{
   width: 40%;
-  background-color:#f2dd80;
+  background-color:#AEC595;
   color:#fffff0;
   padding: 12px 20px;
   text-decoration: none;
