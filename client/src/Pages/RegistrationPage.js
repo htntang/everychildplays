@@ -4,9 +4,10 @@ export default function RegistrationPage() {
 
         <h1>Register</h1>
 
-            <input type="text" placeholder="username" />
-            <input type="email" placeholder="email" />
-            <input type="password" placeholder="password" />
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Email" />
+            <input type="password" placeholder="Password" />
             <button>Register</button>
         </form>
     );
