@@ -14,6 +14,8 @@ import SearchPlaygrounds from './Pages/SearchPlaygrounds';
 import Books from './Pages/Books';
 import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
+import Reviews from './Pages/Reviews';
+import Blog from './Pages/Blog';
 
 function App() {
   return(
