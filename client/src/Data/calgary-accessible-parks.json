@@ -53,20 +53,20 @@
             "properties": {
                 "PARK_ID":"#",
                 "NAME":"Hidden_Hut",
-                "QUADRANT":"Southeast",
-                "ADDRESS":"1827 68 St. SE",
-                "ACCESSIBLE":"yes",
-                "PATHWAYS":"yes",
-                "BATHROOMS":"yes",
-                "BENCHES":"yes",
-                "PICNIC-TABLES":"yes",
-                "PLAYGROUND":"yes",
-                "TRAIL":"no",
-                "GARDEN":"misc. rose garden"
+                "QUADRANT":"Northwest",
+                "ADDRESS":"10504 Hidden Valley Dr NW, Calgary, AB T3A 4Z2",
+                "ACCESSIBLE":"",
+                "PATHWAYS":"",
+                "BATHROOMS":"",
+                "BENCHES":"",
+                "PICNIC-TABLES":"",
+                "PLAYGROUND":"",
+                "TRAIL":"",
+                "GARDEN":""
             },
     "geometry": {
         "type": "Point",
-        "coordinates":[51.03619075068325, -113.94548411741002]
+        "coordinates":[51.14931951410839, -114.10172809835912]
     }  
     },
 
@@ -75,20 +75,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"South_Glenmore_Park",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Southwest",
+            "ADDRESS":"24 St SW, Calgary, AB T2V 3N8",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[50.973095643500805, -114.11891904440073]
     }  
     },
 
@@ -97,20 +97,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"North_Glenmore_Park",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Southwest",
+            "ADDRESS":"7305 Crowchild Trail SW, Calgary, AB T3E 5N5",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[50.989756699376244, -114.12501549652147]
     }  
     },
 
@@ -119,20 +119,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"Ramsay_Inclusive_Playground",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Southeast",
+            "ADDRESS":"811 MacDonald Ave SE, Calgary, AB T2G 4M3",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[51.04092394433639, -114.04365088857398]
     }  
     },
 
@@ -141,20 +141,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"Sandy_Beach",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Southwest",
+            "ADDRESS":"4500 14a St SW, Calgary, AB T2T 2V8",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[51.00961897943967, -114.08987829097072]
     }  
     },
 
@@ -163,20 +163,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"Somerset",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Southwest",
+            "ADDRESS":"999 Somerset Dr SW, Calgary, AB T2Y 3G9",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[50.89871643733467, -114.07786873276314]
     }  
     },
 
@@ -185,20 +185,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"Ted_Harrison",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Northeast",
+            "ADDRESS":"215 Taravista Way NE, Calgary, AB T3J 4L1",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[51.118461102940714, -113.92739990021126]
     }  
     },
 
@@ -207,20 +207,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"Vivo",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Northeast",
+            "ADDRESS":"11950 Country Village Link NE, Calgary, AB T3K 6E3",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[51.1608586677393, -114.0604160155508]
     }  
     },
 
@@ -229,20 +229,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"Shouldice",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Northwest",
+            "ADDRESS":"1515 Home Rd NW, Calgary, AB T3B 0V8",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[51.07114531918139, -114.16698578911631]
     }  
     },
 
@@ -251,20 +251,20 @@
         "properties": {
             "PARK_ID":"#",
             "NAME":"Thorncliffe_Greenview",
-            "QUADRANT":"",
-            "ADDRESS":"",
-            "ACCESSIBLE":"yes",
-            "PATHWAYS":"yes",
-            "BATHROOMS":"yes",
-            "BENCHES":"yes",
-            "PICNIC-TABLES":"yes",
-            "PLAYGROUND":"yes",
-            "TRAIL":"no",
-            "GARDEN":"misc. rose garden"
+            "QUADRANT":"Northeast",
+            "ADDRESS":"NB Centre ST N @, 54 Ave NE, Calgary, AB T2K 0T3",
+            "ACCESSIBLE":"",
+            "PATHWAYS":"",
+            "BATHROOMS":"",
+            "BENCHES":"",
+            "PICNIC-TABLES":"",
+            "PLAYGROUND":"",
+            "TRAIL":"",
+            "GARDEN":""
         },
     "geometry": {
     "type": "Point",
-    "coordinates":[0, 0]
+    "coordinates":[51.10061361638782, -114.06196837507645]
     }  
     }
 ]  
