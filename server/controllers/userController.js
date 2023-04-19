@@ -4,6 +4,10 @@ import User from '../models/userModel.js';
 const createUser = async (req, res) => {
     try {
       const { name, username, email, password, } = req.body;
+
+      if (!req.body.name || !req.body.username || !req.body.email || !req.body.password) {
+        return res.status(400).json({ message: 'Missing required field' });
+      }
   
       const existingUsername = await User.findOne({ username });
       if (existingUsername) return res.status(400).json({ message: 'Username already taken, please choose another username' });
