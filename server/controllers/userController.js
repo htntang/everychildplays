@@ -3,7 +3,7 @@ import User from '../models/userModel.js';
 // Create new user
 const createUser = async (req, res) => {
     try {
-      const { username, email, password, } = req.body;
+      const { name, username, email, password, } = req.body;
   
       const existingUsername = await User.findOne({ username });
       if (existingUsername) return res.status(400).json({ message: 'Username already taken, please choose another username' });
@@ -11,9 +11,7 @@ const createUser = async (req, res) => {
       const existingEmail = await User.findOne({ email });
       if (existingEmail) return res.status(400).json({ message: 'User with this email already exists' });
   
-      const newUser = new User({ username, email, password });
-  
-      await newUser.save();
+      const newUser = await User.create({ name, username, email, password });
   
       res.status(201).json(newUser);
     } catch (error) {
