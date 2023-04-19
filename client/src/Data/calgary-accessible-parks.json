@@ -10,11 +10,16 @@
             "properties": {
                 "PARK_ID":"#",
                 "NAME":"Edworthy_Park",
+                "QUADRANT":"Southwest",
                 "ADDRESS":"5050 Spruce Dr. SW",
                 "ACCESSIBLE":"yes",
                 "PATHWAYS":"yes",
                 "BATHROOMS":"yes",
-                "BENCHES":"yes"
+                "BENCHES":"yes",
+                "PICNIC-TABLES":"yes",
+                "PLAYGROUND":"yes",
+                "TRAIL":"Douglas Fir Trail",
+                "GARDEN":"Lawrey Garden"
             },
     "geometry": {
         "type": "Point",
@@ -26,18 +31,242 @@
             "type":"Feature",
             "properties": {
                 "PARK_ID":"#",
-                "NAME":"",
-                "ADDRESS":"",
+                "NAME":"Elliston_Park",
+                "QUADRANT":"Southeast",
+                "ADDRESS":"1827 68 St. SE",
                 "ACCESSIBLE":"yes",
                 "PATHWAYS":"yes",
                 "BATHROOMS":"yes",
-                "BENCHES":"yes"
+                "BENCHES":"yes",
+                "PICNIC-TABLES":"yes",
+                "PLAYGROUND":"yes",
+                "TRAIL":"no",
+                "GARDEN":"misc. rose garden"
             },
     "geometry": {
         "type": "Point",
-        "coordinates":[0,0]
+        "coordinates":[51.03619075068325, -113.94548411741002]
     }  
-} 
+        },
+        {
+            "type":"Feature",
+            "properties": {
+                "PARK_ID":"#",
+                "NAME":"Hidden_Hut",
+                "QUADRANT":"Southeast",
+                "ADDRESS":"1827 68 St. SE",
+                "ACCESSIBLE":"yes",
+                "PATHWAYS":"yes",
+                "BATHROOMS":"yes",
+                "BENCHES":"yes",
+                "PICNIC-TABLES":"yes",
+                "PLAYGROUND":"yes",
+                "TRAIL":"no",
+                "GARDEN":"misc. rose garden"
+            },
+    "geometry": {
+        "type": "Point",
+        "coordinates":[51.03619075068325, -113.94548411741002]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"South_Glenmore_Park",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"North_Glenmore_Park",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"Ramsay_Inclusive_Playground",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"Sandy_Beach",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"Somerset",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"Ted_Harrison",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"Vivo",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"Shouldice",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    },
+
+    {
+        "type":"Feature",
+        "properties": {
+            "PARK_ID":"#",
+            "NAME":"Thorncliffe_Greenview",
+            "QUADRANT":"",
+            "ADDRESS":"",
+            "ACCESSIBLE":"yes",
+            "PATHWAYS":"yes",
+            "BATHROOMS":"yes",
+            "BENCHES":"yes",
+            "PICNIC-TABLES":"yes",
+            "PLAYGROUND":"yes",
+            "TRAIL":"no",
+            "GARDEN":"misc. rose garden"
+        },
+    "geometry": {
+    "type": "Point",
+    "coordinates":[0, 0]
+    }  
+    }
 ]  
 }
     
