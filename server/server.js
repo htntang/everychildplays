@@ -1,5 +1,6 @@
 import express from "express"
 import dotenv from "dotenv"
+import cors from 'cors'
 import connectDB from "./config/db.js"
 import userRouter from "./routes/userRoutes.js"
 import playgroundRouter from "./routes/playgroundRoutes.js"
@@ -12,6 +13,8 @@ const app = express()
 const port = process.env.PORT || 5005
 
 connectDB()
+
+app.use(cors())
 
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))

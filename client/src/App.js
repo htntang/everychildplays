@@ -24,7 +24,7 @@ function App() {
        <Route path="/" element={ <Layout /> }>
         <Route index element = { <IndexPage /> }/>
         <Route path="/login" element={ <LoginPage /> } />
-        <Route path="/register" element={ <RegistrationPage /> } />
+        <Route path="/register" element={ <RegistrationPage/> } />
         <Route path="/about" element={ <About />} />
         <Route path="/team" element={ <Team /> } />
         <Route path="/map" element={ <PlaygroundMap /> } />
