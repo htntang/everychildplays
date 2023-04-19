@@ -14,8 +14,9 @@ import SearchPlaygrounds from './Pages/SearchPlaygrounds';
 import Books from './Pages/Books';
 import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
-import Reviews from './Pages/Reviews';
+import Reviews from './Pages/Directory';
 import Blog from './Pages/Blog';
+import Directory from './Pages/Directory';
 
 function App() {
   return(
@@ -35,7 +36,7 @@ function App() {
         <Route path="/resources" element={ <Resources /> } />
         <Route path="/contactus" element={ <Contact />} />
         <Route path="/blog" element={ <Blog /> } />
-        <Route path="/reviews" element={ <Reviews /> } />
+        <Route path="/directory" element={ <Directory /> } />
       </Route>
     </Routes>
   </>

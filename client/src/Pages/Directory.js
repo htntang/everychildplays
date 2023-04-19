@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 
-export default function Reviews() {
+export default function Directory() {
 
     return(
         <>
@@ -39,7 +39,8 @@ export default function Reviews() {
         </CardContent>
         <CardActions>
             <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
@@ -63,7 +64,8 @@ export default function Reviews() {
         </CardContent>
         <CardActions>
             <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
@@ -87,7 +89,8 @@ export default function Reviews() {
         </CardContent>
         <CardActions>
             <Button size="small">Share</Button>
-            <Button size="small">Learn More</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
