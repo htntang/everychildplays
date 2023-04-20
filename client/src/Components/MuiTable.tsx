@@ -13,19 +13,18 @@ export const MuiTable = () => {
         <Table aria-label='simple-table'>
             <TableHead>
             <TableRow>
-            <TableCell>ID</TableCell>
-            <TableCell>Park</TableCell>
-            <TableCell>Address</TableCell>
+            <TableCell><b>Playground</b></TableCell>
+            <TableCell><b>Quadrant</b></TableCell>
+            <TableCell><b>Address</b></TableCell>
             </TableRow>
             </TableHead>
             {
                 tableData.map(row => (
                     <TableRow 
-                    key = {row.id}
-                    sx = {{ '&:last-child td, &:last-child th' : {border:0} }}
+                    key = {row.playground}
                     >
-                        <TableCell>{row.id}</TableCell>
                         <TableCell>{row.playground}</TableCell>
+                        <TableCell>{row.quadrant}</TableCell>
                         <TableCell>{row.address}</TableCell>
                     </TableRow>
                 ))
@@ -38,8 +37,59 @@ export const MuiTable = () => {
 
 const tableData = 
 [
-    {"id":"3479:eafe:1f5e:32e9:29d:ee8b:add9:4546/55","playground":"Ali-Sabieh","address":17.8643499},
-    {"id":"4737:7a9e:b03a:86b5:f339:9563:41ae:7d5d/22","playground":"Berdyansk","address":13.6263627},
-    {"id":"88b3:a39e:df84:6d7a:b341:4e84:3241:528d/59","playground":"Shouldice","address":-87.606295},
-    {"id":"5cab:4e34:6b0f:a35b:96e4:aa1b:4814:6e71/68","playground":"Stillwater","address":130.0510793}
+    {
+        "playground":"Edworthy",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Elliston",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Hidden Hut",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"South Glenmore Park",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"North Glenmore Park",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Ramsay Inclusive Park",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Sandy Beach Park",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Somerset Park",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Ted Harrison Park",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Vivo Inclusive Park",
+        "quadrant":"",
+        "address":""
+    },
+    {
+        "playground":"Thorncliffe-Greenview",
+        "quadrant":"",
+        "address":""
+    }
 ]
