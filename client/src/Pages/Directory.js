@@ -20,7 +20,7 @@ export default function Directory() {
             alignItems="center"
             >
 
-                <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 335, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://assets.website-files.com/601195401bde1d94d961140d/62950c49e0e2ce20582f7326_EdworthPark_MariahLeeStudios-7520.jpg"
@@ -38,14 +38,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://assets.website-files.com/601195401bde1d94d961140d/6173153760eae32064e861cc_Elliston%20Finished%20-%20still%20fenced%20(1)-min.JPG"
@@ -63,14 +62,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -88,8 +86,7 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
@@ -103,7 +100,7 @@ export default function Directory() {
             justifyContent="center"
             alignItems="center"
             >
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -121,14 +118,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -146,14 +142,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -171,8 +166,7 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
@@ -186,7 +180,7 @@ export default function Directory() {
             justifyContent="center"
             alignItems="center"
             >
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -204,14 +198,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -229,14 +222,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -254,8 +246,7 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
@@ -269,7 +260,7 @@ export default function Directory() {
             justifyContent="center"
             alignItems="center"
             >
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -287,14 +278,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -312,14 +302,13 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
         </Grid>
 
-        <Grid xs={4}>
+        <Grid item xs={4}>
         <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
         <CardMedia style={{ height: 140 }}
         image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
@@ -337,8 +326,7 @@ export default function Directory() {
             </Typography>
         </CardContent>
         <CardActions>
-            <Button size="small">Share</Button>
-            <Button size="small">Comment</Button>
+            <Button size="small">Add Review</Button>
             <Button size="small">Read More</Button>
         </CardActions>
         </Card>
