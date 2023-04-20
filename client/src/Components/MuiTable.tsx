@@ -65,7 +65,7 @@ const tableData =
     },
     {
         "playground":"South Glenmore Park",
-        "quadrant":"SW",
+        "quadrant":"Southwest",
         "address":"8415 24 St SW",
         "features":"",
         "hours":""
