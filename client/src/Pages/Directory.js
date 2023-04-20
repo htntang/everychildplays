@@ -322,7 +322,7 @@ export default function Directory() {
                 <i>4900 Monserrat Dr. Northwest</i>
                 <br></br>
                 <br></br>
-                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+                This awesome new inclusive playground has accessible flooring throughout and includes two different tandem swings and a double zipline!
             </Typography>
         </CardContent>
         <CardActions>
