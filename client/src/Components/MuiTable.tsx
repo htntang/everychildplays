@@ -44,29 +44,29 @@ const tableData =
 [
     {
         "playground":"Edworthy",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Southwest",
+        "address":"5050 Spruce Dr. SW",
         "features":"",
         "hours":""
     },
     {
         "playground":"Elliston",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Southeast",
+        "address":"1827 68 St. SE",
         "features":"",
         "hours":""
     },
     {
         "playground":"Hidden Hut",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Northwest",
+        "address":"10504 Hidden Valley Dr NW",
         "features":"",
         "hours":""
     },
     {
         "playground":"South Glenmore Park",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"SW",
+        "address":"8415 24 St SW",
         "features":"",
         "hours":""
     },
@@ -79,36 +79,36 @@ const tableData =
     },
     {
         "playground":"Ramsay Inclusive Park",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Southeast",
+        "address":"Macdonald Ave SE & Bellevue Ave SE",
         "features":"",
         "hours":""
     },
     {
         "playground":"Sandy Beach Park",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Southwest",
+        "address":"4500 14A St. SW",
         "features":"",
         "hours":""
     },
     {
         "playground":"Somerset Park",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Southwest",
+        "address":"999 Somerset Square SW",
         "features":"",
         "hours":""
     },
     {
         "playground":"Ted Harrison Park",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Northeast",
+        "address":"Taralake Way NE & Taradale Dr NE",
         "features":"",
         "hours":""
     },
     {
         "playground":"Vivo Inclusive Park",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Northeast",
+        "address":"Country Village Rd NE & Country Village Way NE",
         "features":"",
         "hours":""
     },
@@ -116,6 +116,13 @@ const tableData =
         "playground":"Thorncliffe-Greenview",
         "quadrant":"",
         "address":"",
+        "features":"",
+        "hours":""
+    },
+    {
+        "playground":"Shouldice Inclusive Park",
+        "quadrant":"Northwest",
+        "address":"4900 Monserrat Dr. NW",
         "features":"",
         "hours":""
     }
