@@ -11,7 +11,7 @@ export default function Directory() {
 
     return(
         <>
-        <h1>Recent Reviews</h1>
+        <h1>Directory & Reviews</h1>
         
         <div className="reviews" style={{ padding: 30 }}>
 
@@ -79,6 +79,255 @@ export default function Directory() {
         <CardContent>
             <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
                 <b>Shouldice Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+        </Grid>
+
+        <br></br>
+        <br></br>
+
+        <Grid container spacing={2}
+            justifyContent="center"
+            alignItems="center"
+            >
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>Hidden Hut Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>South Glenmore Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>North Glenmore Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+        </Grid>
+
+        <br></br>
+        <br></br>
+
+        <Grid container spacing={2}
+            justifyContent="center"
+            alignItems="center"
+            >
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>Ramsay Inclusive Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>Sandy Beach Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>Somerset Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+        </Grid>
+
+        <br></br>
+        <br></br>
+
+        <Grid container spacing={2}
+            justifyContent="center"
+            alignItems="center"
+            >
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>Ted Harrison Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>Vivo Inclusive Park</b>
+            </Typography>
+            <Typography variant="body2" color="#fffff0">
+                <i>4900 Monserrat Dr. Northwest</i>
+                <br></br>
+                <br></br>
+                The Shouldice Park playground is inclusive, fully accessible with a soft floor, easy ramp access, lots of slides, climbing structures, swings, and playful setups. It’s recommended for kids in the 2-12 age range.
+            </Typography>
+        </CardContent>
+        <CardActions>
+            <Button size="small">Share</Button>
+            <Button size="small">Comment</Button>
+            <Button size="small">Read More</Button>
+        </CardActions>
+        </Card>
+        </Grid>
+
+        <Grid xs={4}>
+        <Card style={{maxWidth: 345, backgroundColor:"#AEC595"}}>
+        <CardMedia style={{ height: 140 }}
+        image="https://www.calgaryadaptedhub.com/static/a380a9b1008c97af86a632b004ebd425/86361/blog_2-Playground-Project-min.jpg"
+        title="inclusive-park"
+        />
+        <CardContent>
+            <Typography gutterBottom variant="h5" component="div" color="#fffff0" font-family="Impact">
+                <b>Thorncliffe Greenview</b>
             </Typography>
             <Typography variant="body2" color="#fffff0">
                 <i>4900 Monserrat Dr. Northwest</i>
