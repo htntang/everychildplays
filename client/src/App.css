@@ -210,6 +210,11 @@ h2.contact-form{
   text-align: center;
 }
 
+h4{
+  text-decoration: none;
+  font-size:small;
+}
+
 div.reviews{
   margin:0 auto;
 }
