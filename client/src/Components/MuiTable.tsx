@@ -16,8 +16,11 @@ export const MuiTable = () => {
             <TableCell><b>Playground</b></TableCell>
             <TableCell><b>Quadrant</b></TableCell>
             <TableCell><b>Address</b></TableCell>
+            <TableCell><b>Accessibility Features</b></TableCell>
+            <TableCell><b>Hours</b></TableCell>
             </TableRow>
             </TableHead>
+
             {
                 tableData.map(row => (
                     <TableRow 
@@ -26,6 +29,8 @@ export const MuiTable = () => {
                         <TableCell>{row.playground}</TableCell>
                         <TableCell>{row.quadrant}</TableCell>
                         <TableCell>{row.address}</TableCell>
+                        <TableCell>{row.features}</TableCell>
+                        <TableCell>{row.hours}</TableCell>
                     </TableRow>
                 ))
             }
@@ -40,56 +45,78 @@ const tableData =
     {
         "playground":"Edworthy",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Elliston",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Hidden Hut",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"South Glenmore Park",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"North Glenmore Park",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Ramsay Inclusive Park",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Sandy Beach Park",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Somerset Park",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Ted Harrison Park",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Vivo Inclusive Park",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     },
     {
         "playground":"Thorncliffe-Greenview",
         "quadrant":"",
-        "address":""
+        "address":"",
+        "features":"",
+        "hours":""
     }
 ]
