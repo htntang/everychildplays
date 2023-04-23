@@ -34,6 +34,19 @@ const getPlaygroundById = async (req, res) => {
   }
 };
 
+// Get a single playground by name
+const getPlaygroundByName = async (req, res) => {
+  try {
+    const playground = await Playground.findOne(req.params.name);
+    if (!playground) {
+      return res.status(404).json({ message: 'Playground not found' });
+    }
+    res.json(playground);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
 // Update a playground by id
 const updatePlaygroundById = async (req, res) => {
   try {
@@ -64,6 +77,7 @@ const deletePlaygroundById = async (req, res) => {
 
 export { createPlayground, 
         getAllPlaygrounds, 
-        getPlaygroundById, 
+        getPlaygroundById,
+        getPlaygroundByName, 
         updatePlaygroundById, 
         deletePlaygroundById };

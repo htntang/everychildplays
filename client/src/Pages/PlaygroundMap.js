@@ -1,8 +1,8 @@
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
-import PlaygroundMarker from "../assets/inclusive_playground.png";
 import axios from "axios";
+
 
 function PlaygroundMap() {
   const [markers, setMarkers] = useState([]);
@@ -23,11 +23,8 @@ function PlaygroundMap() {
 
         const newMarkers = playgroundData.map(playground => {
           const markerElement = document.createElement("div");
-          markerElement.style.backgroundImage = `url(${PlaygroundMarker})`;
-          markerElement.style.width = "50px";
-          markerElement.style.height = "50px";
-          markerElement.style.backgroundSize = "contain";
-          markerElement.style.backgroundRepeat = "no-repeat";
+					markerElement.classList.add("playground-marker");
+
 
           const newMarker = new mapboxgl.Marker({
             element: markerElement,
