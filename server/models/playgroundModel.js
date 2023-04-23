@@ -12,12 +12,10 @@ const playgroundSchema = new mongoose.Schema({
     latitude: {
       type: Number,
       required: true,
-      select: false // exclude this field from query results
     },
     longitude: {
       type: Number,
       required: true,
-      select: false // exclude this field from query results
     },
     description: {
         type: String,
@@ -40,7 +38,13 @@ const playgroundSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Review'
       }
-    ]
+    ],
+    neighbourhood: {
+      type: String,
+    },
+    quadrant: {
+      type: String,
+    }
   });
 
   const Playground = mongoose.model('Playground', playgroundSchema);

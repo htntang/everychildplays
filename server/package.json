@@ -5,6 +5,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "load": "node models/loadInitialPlaygroundData.js",
     "start": "node server/server.js",
     "server": "nodemon server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"

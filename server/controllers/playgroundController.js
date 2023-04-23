@@ -5,9 +5,9 @@ const createPlayground = async (req, res) => {
   try {
     const newPlayground = new Playground(req.body);
     await newPlayground.save();
-    res.status(201).json(newPlayground);
+    res.send(newPlayground);
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    res.status(400).send({ message: error.message });
   }
 };
 
