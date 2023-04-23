@@ -4,7 +4,7 @@ import PlaygroundMarker from '../assets/inclusive-playground-marker.svg';
 
 function PlaygroundMap() {
   useEffect(() => {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiaW5jbHVzaXZlcGxheXdvcmtzIiwiYSI6ImNsZ291NTlnZjBsYmQzZ2tjdGtqaWJsa3oifQ.XL2r23iiSDVExpHNlTxG0g';
+    mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/inclusiveplayworks/clgsh6lgj000z01q1apkg1ft1',
@@ -22,3 +22,4 @@ function PlaygroundMap() {
 }
 
 export default PlaygroundMap;
+
