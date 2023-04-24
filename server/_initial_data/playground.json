@@ -11,7 +11,8 @@
 		"ageRange": "All Ages",
 		"reviews": [],
 		"neighbourhood": "Wildwood",
-		"quadrant": "SW"
+		"quadrant": "SW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Elliston Park",
@@ -25,7 +26,8 @@
 		"ageRange": "All Ages",
 		"reviews": [],
 		"neighbourhood": "Red Carpet",
-		"quadrant": "SE"
+		"quadrant": "SE",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Shouldice Park",
@@ -39,7 +41,8 @@
 		"ageRange": "All Ages",
 		"reviews": [],
 		"neighbourhood": "Montgomery",
-		"quadrant": "NW"
+		"quadrant": "NW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Hidden Hut",
@@ -53,7 +56,8 @@
 		"ageRange": "All Ages",
 		"reviews": [],
 		"neighbourhood": "Acadia",
-		"quadrant": "SW"
+		"quadrant": "SW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "South Glenmore Park",
@@ -67,7 +71,8 @@
 		"ageRange": "All Ages",
 		"reviews": [],
 		"neighbourhood": "Bayview and Pump Hill",
-		"quadrant": "SW"
+		"quadrant": "SW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "North Glenmore Park",
@@ -89,7 +94,8 @@
 		"ageRange": "All ages",
 		"reviews": [],
 		"neighbourhood": "North Glenmore",
-		"quadrant": "SW"
+		"quadrant": "SW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Ramsay Inclusive Playground",
@@ -111,7 +117,8 @@
 		"ageRange": "All ages",
 		"reviews": [],
 		"neighbourhood": "Ramsay",
-		"quadrant": "SE"
+		"quadrant": "SE",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Sandy Beach",
@@ -132,7 +139,8 @@
 		"ageRange": "0-12",
 		"reviews": [],
 		"neighbourhood": "Britannia",
-		"quadrant": "SW"
+		"quadrant": "SW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Somerset Water Park",
@@ -152,7 +160,8 @@
 		"ageRange": "2-12",
 		"reviews": [],
 		"neighbourhood": "Somerset",
-		"quadrant": "SW"
+		"quadrant": "SW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Ted Harrison",
@@ -165,7 +174,8 @@
 		"safetyFeatures": ["fencing", "security cameras"],
 		"ageRange": "2-12",
 		"neighbourhood": "Beltline",
-		"quadrant": "SW"
+		"quadrant": "SW",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Vivo",
@@ -179,7 +189,8 @@
 		"ageRange": "0-12",
 		"reviews": [],
 		"neighbourhood": "Country Hills Village",
-		"quadrant": "NE"
+		"quadrant": "NE",
+		"moreInformation": [" "]
 	},
 	{
 		"name": "Thorncliffe Greenview",
@@ -201,6 +212,7 @@
 		"ageRange": "2-12 years",
 		"reviews": [],
 		"neighbourhood": "Thorncliffe Greenview",
-		"quadrant": "NE"
+		"quadrant": "NE",
+		"moreInformation": [" "]
 	}
 ]

@@ -44,7 +44,10 @@ const playgroundSchema = new mongoose.Schema({
     },
     quadrant: {
       type: String,
-    }
+    },
+    moreInformation: [{
+      type: String,
+  }],
   });
 
   const Playground = mongoose.model('Playground', playgroundSchema);
