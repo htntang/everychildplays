@@ -49,7 +49,6 @@ export default function Team() {
                 <h2>Kenneth Ugo</h2>
                 <img className="headshot" src="https://i.imgur.com/NEHq3O9.jpg"></img>
                 <br></br>
-                <br></br>
                 <body className="bio">As a Cloud DevOps Engineer with over four years of experience, Kenneth has honed his ability to balance autonomy and teamwork, effectively utilizing cloud services and DevOps tools to manage complex systems and exceed expectations.
                 <br></br>
                 <br></br>Kenneth is committed to continuous learning and improvement, and approaching problem-solving with a self-driven mindset, while also collaborating effectively with any team.

@@ -167,9 +167,17 @@ div.inceptionu{
   margin-right:auto;
 }
 
+footer{
+  margin-top: 100px;
+}
+
+footer a{
+  text-decoration: none;
+  color:#fff;
+}
+
 footer img{
   margin:0 auto;
-  margin-top:40px;
   max-width:60%;
   display:block;
   margin-left:auto;
