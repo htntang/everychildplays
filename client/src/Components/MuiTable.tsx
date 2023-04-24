@@ -78,8 +78,8 @@ const tableData =
     },
     {
         "playground":"North Glenmore Park",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Southwest",
+        "address":"7305 Crowchild Trail SW T3E 5N5",
         "features":"",
         "info":"",
         "hours":""
@@ -126,8 +126,8 @@ const tableData =
     },
     {
         "playground":"Thorncliffe-Greenview",
-        "quadrant":"",
-        "address":"",
+        "quadrant":"Northeast",
+        "address":"NB Centre ST N @, 54 Ave NE T2K 0T3",
         "features":"",
         "info":"",
         "hours":""
