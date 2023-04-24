@@ -167,8 +167,10 @@ div.inceptionu{
   margin-right:auto;
 }
 
-div.about-us-img{
-  max-width:100%;
+footer img{
+  margin:0 auto;
+  margin-top:40px;
+  max-width:60%;
   display:block;
   margin-left:auto;
   margin-right:auto

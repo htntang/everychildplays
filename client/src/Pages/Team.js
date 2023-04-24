@@ -63,17 +63,6 @@ export default function Team() {
             </div>
                 </div>
         </div>
-
-        <div className="inceptionu-team">
-          <div className="row">
-            <div className="column">
-            <img src="https://i.imgur.com/w1wuayu.png"></img>
-              </div>
-          <div className="column">
-          <img src="https://i.imgur.com/radlFWM.png"></img>
-          </div>
-          </div>
-          </div>
         </>
     );
 }
