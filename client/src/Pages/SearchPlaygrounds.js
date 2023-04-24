@@ -3,7 +3,12 @@ import { MuiTable } from "../Components/MuiTable.tsx";
 export default function SearchPlaygrounds() {
     return(
         <>
-        <h1>Search Playgrounds</h1>
+        <div className="searchbar">
+            <input type="text" placeholder="Search..." className="search" />
+            <ul className="list">
+                
+            </ul>
+        </div>
 
         <MuiTable />
         </>
