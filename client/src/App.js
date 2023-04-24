@@ -16,6 +16,7 @@ import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
 import Blog from './Pages/Blog';
 import Directory from './Pages/Directory';
+import Submit from './Pages/Submit';
 
 function App() {
   return(
@@ -36,6 +37,7 @@ function App() {
         <Route path="/contactus" element={ <Contact />} />
         <Route path="/blog" element={ <Blog /> } />
         <Route path="/directory" element={ <Directory /> } />
+        <Route path="/submit" element={ <Submit /> } />
       </Route>
     </Routes>
   </>
