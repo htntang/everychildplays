@@ -11,7 +11,7 @@ export default function Navbar() {
             <li><a href="/about">About Us</a></li>
             <li><a href="/team">Meet the Team</a></li>
             <li><a href="/contactus">Contact Us</a></li>
-            <li><a href="/directorywithbackend">Directory with Backend</a></li>
+            <li><a href="/submit">Submit a Playground!</a></li>
         </ul>
     </nav>
 }
