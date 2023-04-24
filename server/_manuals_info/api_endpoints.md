@@ -2,7 +2,7 @@ Each API endpoint begins with http://localhost:5005
 
 # Playgrounds
 createPlayground        POST /api/playgrounds/create 
-getAllPlaygrounds       GET /api/playgrounds
+getAllPlaygrounds       GET /api/playgrounds/
 getPlaygroundById       GET /api/playgrounds/:id
 updatePlaygroundById    PATCH /api/playgrounds/:id
 deletePlaygroundById    DELETE /api/playgrounds/:id
