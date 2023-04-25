@@ -1,5 +1,7 @@
 import { MuiTable } from "../Components/MuiTable.tsx";
 
+import { MuiTable2 } from "../Components/MuiTableFromBackend.tsx"
+
 export default function SearchPlaygrounds() {
     return(
         <>
@@ -11,6 +13,12 @@ export default function SearchPlaygrounds() {
         </div>
 
         <MuiTable />
+
+        <br />
+        <br />
+
+        <MuiTable2 />
+
         </>
     );
 }
