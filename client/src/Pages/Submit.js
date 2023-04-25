@@ -29,7 +29,7 @@ const Submit = () => {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post('/api/playgrounds', parkData);
+      await axios.post('http://localhost:5005/api/playgrounds/create', parkData);
       setSuccess(true);
       setError('');
       setParkData({
@@ -94,7 +94,6 @@ const Submit = () => {
         required
         />
         <label htmlFor="description">Description</label>
-        <br />
         <input
         type="text"
         name="description"
@@ -145,7 +144,6 @@ const Submit = () => {
         onChange={handleInputChange}
         />
         <label htmlFor="moreInformation">More Information</label>
-        <br />
         <input
         type="text"
         name="moreInformation"
