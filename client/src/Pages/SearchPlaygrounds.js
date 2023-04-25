@@ -1,7 +1,7 @@
-import { MuiTable } from "../Components/MuiTable.tsx";
+import { MuiTable2 } from "../Components/MuiTableFromBackend.tsx"
+// import { MuiTable } from "../Components/MuiTable.tsx";
 import {useState, useEffect} from "react";
 
-import { MuiTable2 } from "../Components/MuiTableFromBackend.tsx"
 
 export default function SearchPlaygrounds() {
     const [playgroundResults, setPlaygroundResults] =useState([]);
@@ -57,7 +57,7 @@ export default function SearchPlaygrounds() {
                     onChange={(event) => {
                         setSearchTerm(event.target.value);
                     }} /> 
-        <button onClick={searchTerm}>Filter</button>
+        {/* <button onClick={searchTerm}>Filter</button> */}
         <div className="filters">
                 <label htmlFor="accessibilityFeaturesFilter">
                     <input type="checkbox"
@@ -83,21 +83,13 @@ export default function SearchPlaygrounds() {
 
             <ul className="list">
             <li className="listItem">
-            <MuiTable data={filteredResults.length >0? filteredResults: playgroundResults}/>
+            <MuiTable2 data={filteredResults.length >0? filteredResults: playgroundResults}/>
+            <br />
+            <br />
+        {/* <MuiTable /> */}
             </li>
             </ul>
         </div>
-<<<<<<< HEAD
-=======
-
-        <MuiTable />
-
-        <br />
-        <br />
-
-        <MuiTable2 />
-
->>>>>>> 78995c0a2109e81da2ea1d0da310214cfbcbceee
         </>
     );
 }
