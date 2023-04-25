@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import axios from 'axios';
-=======
-import React from "react";
-
-export default function Submit() {
-    return(
-        <form className="submission">
-            <h1>Submit a Playground!</h1>
->>>>>>> 4d777c1 (edited the navbar)
 
 const Submit = () => {
   const [parkData, setParkData] = useState({
