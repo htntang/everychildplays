@@ -1,7 +1,7 @@
 import { MuiTable2 } from "../Components/MuiTableFromBackend.tsx"
 import {useState, useEffect} from "react";
 import axios from "axios";
-
+import MyDocument from "../Components/MuiTableFromBackend.tsx"
 
 export default function SearchPlaygrounds() {
     const [playgroundResults, setPlaygroundResults] =useState([]);
