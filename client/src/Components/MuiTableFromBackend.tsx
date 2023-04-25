@@ -49,16 +49,16 @@ export const MuiTable2 = () => {
         </TableRow>
       </TableHead>
       <TableBody>
-        {data.map((item) => (
-          <TableRow key={item._id}>
-            <TableCell>{item.name}</TableCell>
-            <TableCell>{item.location}</TableCell>
-            <TableCell>{item.accessibilityFeatures.join(", ")}</TableCell>
-            <TableCell>{item.safetyFeatures.join(", ")}</TableCell>
-            <TableCell>{item.ageRange}</TableCell>
-            <TableCell>{item.neighbourhood}</TableCell>
-            <TableCell>{item.quadrant}</TableCell>
-            <TableCell>{item.moreInformation.join(", ")}</TableCell>
+        {data.map((row) => (
+          <TableRow key={row._id}>
+            <TableCell>{row.name}</TableCell>
+            <TableCell>{row.location}</TableCell>
+            <TableCell>{row.accessibilityFeatures.join(", ")}</TableCell>
+            <TableCell>{row.safetyFeatures.join(", ")}</TableCell>
+            <TableCell>{row.ageRange}</TableCell>
+            <TableCell>{row.neighbourhood}</TableCell>
+            <TableCell>{row.quadrant}</TableCell>
+            <TableCell>{row.moreInformation.join(", ")}</TableCell>
           </TableRow>
         ))}
       </TableBody>
