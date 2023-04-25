@@ -14,7 +14,6 @@ import SearchPlaygrounds from './Pages/SearchPlaygrounds';
 import Books from './Pages/Books';
 import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
-import Blog from './Pages/Blog';
 import Directory from './Pages/Directory';
 import Submit from './Pages/Submit';
 
@@ -35,7 +34,6 @@ function App() {
         <Route path="/books" element={ <Books /> } />
         <Route path="/resources" element={ <Resources /> } />
         <Route path="/contactus" element={ <Contact />} />
-        <Route path="/blog" element={ <Blog /> } />
         <Route path="/directory" element={ <Directory /> } />
         <Route path="/submit" element={ <Submit /> } />
       </Route>
