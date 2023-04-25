@@ -2,13 +2,13 @@ import Review from '../models/reviewModel.js';
 
 // Add a new review
 const createReview = async (req, res) => {
-  const { playgroundId, rating, comment } = req.body;
-  const userId = req.user._id;
+  const { rating, comment } = req.body;
+  // const userId = req.user._id;
 
   try {
     const review = new Review({
-      playground: playgroundId,
-      user: userId,
+      //playground,
+      // user: userId,
       rating,
       comment,
     });
