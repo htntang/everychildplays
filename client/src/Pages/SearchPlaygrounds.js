@@ -1,6 +1,6 @@
 import { MuiTable2 } from "../Components/MuiTableFromBackend.tsx"
-// import { MuiTable } from "../Components/MuiTable.tsx";
 import {useState, useEffect} from "react";
+import axios from "axios";
 
 
 export default function SearchPlaygrounds() {
@@ -14,20 +14,36 @@ export default function SearchPlaygrounds() {
     });
 
     useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const response = await axios.get<MyDocument['']>(
+              "http://localhost:5005/api/playgrounds"
+            );
+            setPlaygroundResults(response.data);
+          } catch (error) {
+            console.error(error);
+          }
+        };
+        fetchData();
+      }, [searchTerm]);
+
+
+    useEffect(() => {
     const filteredResults = playgroundResults.filter((result) => {
         let include = true;
             if (filters.accessibilityFeatures) {
-                include = include && result.fencing;
+                include = include && result.accessibilityFeatures;
             }
             if (filters.safetyFeatures) {
                 include = include && result.securityCamera;
             }
             // add additional filters here
             
-            return include && result.name.toLowerCase().includes(searchTerm.toLowerCase());
+            return
+            include && result.name.toLowerCase().includes(searchTerm.toLowerCase());
         });
         setFilteredResults(filteredResults);
-      }, [playgroundResults, searchTerm]);
+      }, [playgroundResults, searchTerm, filters]);
 
       const handleFilter = (filterTerm) => {
         const filteredResults = playgroundResults.filter((result) => {
@@ -41,12 +57,6 @@ export default function SearchPlaygrounds() {
         setFilteredResults(filteredResults);
       };
 
-    useEffect(() => {
-        fetch ("https://localhost:5005/api/playgrounds")
-        .then((response) => response.json())
-        .then((json) => setPlaygroundResults(json.data))
-    }, [searchTerm])
-    
     
     return(
         <>
@@ -62,9 +72,9 @@ export default function SearchPlaygrounds() {
                 <label htmlFor="accessibilityFeaturesFilter">
                     <input type="checkbox"
                            id="accessibilityFeaturesFilter"
-                           checked={filters.accessiblityFeatures}
+                           checked={filters.accessibilityFeatures}
                            onChange={(event) => {
-                               setFilters({...filters, accessiblityFeatures: event.target.checked})
+                               setFilters({...filters, accessibilityFeatures: event.target.checked})
                            }} />
                     Accessibility Features
                 </label>
@@ -84,9 +94,6 @@ export default function SearchPlaygrounds() {
             <ul className="list">
             <li className="listItem">
             <MuiTable2 data={filteredResults.length >0? filteredResults: playgroundResults}/>
-            <br />
-            <br />
-        {/* <MuiTable /> */}
             </li>
             </ul>
         </div>
