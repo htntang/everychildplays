@@ -1,6 +1,8 @@
 import { MuiTable } from "../Components/MuiTable.tsx";
 import {useState, useEffect} from "react";
 
+import { MuiTable2 } from "../Components/MuiTableFromBackend.tsx"
+
 export default function SearchPlaygrounds() {
     const [playgroundResults, setPlaygroundResults] =useState([]);
     const [searchTerm, setSearchTerm] = useState ("");
@@ -85,6 +87,17 @@ export default function SearchPlaygrounds() {
             </li>
             </ul>
         </div>
+<<<<<<< HEAD
+=======
+
+        <MuiTable />
+
+        <br />
+        <br />
+
+        <MuiTable2 />
+
+>>>>>>> 78995c0a2109e81da2ea1d0da310214cfbcbceee
         </>
     );
 }

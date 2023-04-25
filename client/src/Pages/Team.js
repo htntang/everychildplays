@@ -2,6 +2,7 @@ export default function Team() {
     return(
         <>
         <h1>Meet the Team</h1>
+        
         <div className="team">
         <div className="row">
                 <div className="column">
