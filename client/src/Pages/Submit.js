@@ -55,7 +55,7 @@ const Submit = () => {
 
     return (
         <div>
-    <h2>Add a Park</h2>
+    <h2>Submit a Playground</h2>
     {error && <div style={{ color: 'red' }}>{error}</div>}
     {success && (
         <div style={{ color: 'green' }}>Playground Submitted, Thank you!</div>
