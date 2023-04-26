@@ -1,4 +1,4 @@
-import { MuiTable2 } from "../Components/MuiTableFromBackend.tsx"
+import { MuiTable2} from "../Components/MuiTableFromBackend.tsx"
 import {useState, useEffect} from "react";
 import axios from "axios";
 import MyDocument from "../Components/MuiTableFromBackend.tsx"
@@ -13,19 +13,19 @@ export default function SearchPlaygrounds() {
          // add additional filters here
     });
 
-    useEffect(() => {
-        const fetchData = async () => {
-          try {
-            const response = await axios.get<MyDocument['']>(
-              "http://localhost:5005/api/playgrounds"
-            );
-            setPlaygroundResults(response.data);
-          } catch (error) {
-            console.error(error);
-          }
-        };
-        fetchData();
-      }, [searchTerm]);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //       try {
+    //         const response = await axios.get<MyDocument['']>(
+    //           "http://localhost:5005/api/playgrounds"
+    //         );
+    //         setPlaygroundResults(response.data);
+    //       } catch (error) {
+    //         console.error(error);
+    //       }
+    //     };
+    //     fetchData();
+    //   }, [searchTerm]);
 
 
     useEffect(() => {
