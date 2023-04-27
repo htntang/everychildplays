@@ -2,6 +2,7 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import { useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import axios from "axios";
+import React from 'react'
 
 
 function PlaygroundMap() {
