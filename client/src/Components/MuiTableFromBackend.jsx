@@ -2,30 +2,30 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 
-interface MyDocument {
-  _id: string;
-  name: string;
-  location: string;
-  latitude: number;
-  longitude: number;
-  description: string;
-  pictures: string[];
-  accessibilityFeatures: string[];
-  safetyFeatures: string[];
-  ageRange: string;
-  reviews: string[];
-  neighbourhood: string;
-  quadrant: string;
-  moreInformation: string[];
-}
+// interface MyDocument {
+//   _id: string;
+//   name: string;
+//   location: string;
+//   latitude: number;
+//   longitude: number;
+//   description: string;
+//   pictures: string[];
+//   accessibilityFeatures: string[];
+//   safetyFeatures: string[];
+//   ageRange: string;
+//   reviews: string[];
+//   neighbourhood: string;
+//   quadrant: string;
+//   moreInformation: string[];
+// }
 
 export const MuiTable2 = () => {
-  const [data, setData] = useState<MyDocument[]>([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<MyDocument[]>('http://localhost:5005/api/playgrounds');
+        const response = await axios.get('http://localhost:5005/api/playgrounds');
         setData(response.data);
       } catch (error) {
         console.error(error);
