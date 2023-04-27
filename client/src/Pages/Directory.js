@@ -49,13 +49,11 @@ export default function Directory() {
                     <b>{playground.name}</b>
                   </Typography>
                   <Typography variant="body2" color="#fffff0">
-                    <i>{playground.location}</i>
-                    <br />
-                    <br />
-                    {playground.description}
+                    <i>{playground.location}</i>      
                   </Typography>
                 </CardContent>
                 <CardActions>
+                  <Button>Add Review</Button>
                   <Button size="small" onClick={() => handleOpen(playground)}>
                     Read More
                   </Button>
