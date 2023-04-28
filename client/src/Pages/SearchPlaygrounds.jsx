@@ -37,14 +37,7 @@ const [fetchedData, setFetchedData] = React.useState(null);
     
     return(
         <>
-        <div className="searchbar" style={{ height: 400, width: '100%' }}>
-            <input type="text" 
-                    placeholder="Search..." 
-                    className="search"
-                    onChange={(event) => {
-                        setSearchTerm(event.target.value);
-                    }} /> 
-           
+        <div>
             <DataGrid 
             rows={rows} 
             columns={[
