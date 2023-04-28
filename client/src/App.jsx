@@ -17,11 +17,12 @@ import Resources from './Pages/Resources';
 import Contact from './Pages/Contact';
 import Directory from './Pages/Directory';
 import Submit from './Pages/Submit';
+import { AppContext, AppProvider } from './Components/AppContext';
 
 function App() {
   return(
-    <>
-    
+
+    <AppProvider>
     <Navbar />
     <div className="container"></div>
     <Routes>
@@ -40,7 +41,7 @@ function App() {
         <Route path="/submit" element={ <Submit /> } />
       </Route>
     </Routes>
-  </>
+  </AppProvider>
   );
 }
 

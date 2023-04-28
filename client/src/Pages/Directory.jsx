@@ -2,11 +2,16 @@ import { Card, CardActions, CardContent, CardMedia, Typography, Grid } from "@mu
 import { Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText, Button, TextField } from "@mui/material";
 import Rating from "react-rating-stars-component";
 import ReactStars from "react-rating-stars-component";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import axios from "axios";
+import { AppContext } from "../Components/AppContext";
 
 export default function Directory() {
-  const [playgrounds, setPlaygrounds] = useState([]);
+ // const [playgrounds, setPlaygrounds] = useState([]);
+
+  const context = useContext(AppContext)
+  const playgrounds = context.playgrounds
+
   const [selectedPlayground, setSelectedPlayground] = useState(null);
 
   const [openAddReview, setOpenAddReview] = useState(false);
@@ -17,11 +22,11 @@ export default function Directory() {
 
   const [getReviews, setGetReviews] = useState([]);
 
-  useEffect(() => {
-    axios.get("http://localhost:5005/api/playgrounds/").then((response) => {
-      setPlaygrounds(response.data);
-    });
-  }, []);
+  // useEffect(() => {
+  //   axios.get("http://localhost:5005/api/playgrounds/").then((response) => {
+  //     setPlaygrounds(response.data);
+  //   });
+  // }, []);
 
 
   // Add Review functionality
