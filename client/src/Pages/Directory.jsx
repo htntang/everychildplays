@@ -41,7 +41,7 @@ export default function Directory() {
   const handleSubmitClick = () => {
     if (rating > 0 && comment !== "") {
       const review = {
-        //playground_id: playground,
+      //playground_id: playground,
         rating: rating,
         comment: comment,
       };
