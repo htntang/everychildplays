@@ -14,8 +14,11 @@ const rows = [
   ];
 const columns = [
     {field:'Name', headerName: 'Name'},
-    {field:'Location', headerName: 'Location'},
-    {field:'Accessibility Features', headerName: 'Accessibility Features'}
+    {field:'Quadrant', headerName:'Quadrant'},
+    {field:'Address', headerName: 'Address'},
+    {field: 'Neighbourhood', headerName:'Neighbourhood'},
+    {field:'Age Range', headerName:'Age Range'},
+    {field:'Accessibility Features', headerName: 'Accessibility Features'},
 ];
 
 const [fetchedData, setFetchedData] = React.useState(null);
@@ -43,7 +46,14 @@ const [fetchedData, setFetchedData] = React.useState(null);
            
             <DataGrid 
             rows={rows} 
-            columns={columns} />
+            columns={[
+                    {field:'Name', width:200},
+                    {field:'Address', width:200},
+                    {field:'Quadrant', width:100},
+                    {field:'Neighbourhood', width:200},
+                    {field:'Age Range', width: 100},
+                    {field:'Accessibility Features', width:200}
+                    ]} />
         </div>
         </>
     );
