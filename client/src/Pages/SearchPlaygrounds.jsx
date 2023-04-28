@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import React from "react";
-import { DataGrid, GridToolbar, } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 
 export default function SearchPlaygrounds() {
     const [searchTerm, setSearchTerm] = useState ("");
@@ -44,11 +44,11 @@ const [fetchedData, setFetchedData] = React.useState(null);
                     onChange={(event) => {
                         setSearchTerm(event.target.value);
                     }} /> 
-           
             <DataGrid 
-            rows={rows} 
+            sx = {{ fontWeight:'bold', backgroundColor:'#ffffff'}}
+            rows={rows}
             columns={[
-                    {field:'Name', width:200},
+                    {field:'Name', width:150},
                     {field:'Address', width:200},
                     {field:'Quadrant', width:100},
                     {field:'Neighbourhood', width:200},
