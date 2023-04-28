@@ -30,6 +30,17 @@ export default function Directory() {
   const handleAddReviewClose = () => {
     setOpenAddReview(false);
   };
+
+  let username = "";
+  const token = localStorage.getItem("token");
+  if (token) {
+    const payload = token.split(".")[1];
+    const decodedPayload = atob(payload);
+    const { username: decodedUsername } = JSON.parse(decodedPayload);
+    username = decodedUsername;
+  }
+
+
   const handleRatingChange = (value) => {
     setRating(value);
   };
@@ -39,25 +50,31 @@ export default function Directory() {
   };
 
   const handleSubmitClick = () => {
-    if (rating > 0 && comment !== "") {
-      const review = {
-      //playground_id: playground,
-        rating: rating,
-        comment: comment,
-      };
-      axios
-        .post("http://localhost:5005/api/reviews/create", review)
-        .then((response) => {
-          handleAddReviewClose();
-          setRating(0);
-          setComment("");
-          alert("Review submitted successfully");
-        })
-        .catch((error) => {
-          alert("An error occurred while submitting the review");
-        });
+    if (localStorage.getItem("token")) {
+        if (rating > 0 && comment !== "") {
+          const review = {
+            username: username,
+            playgroundId: selectedPlayground._id,
+            rating: rating,
+            comment: comment,
+          };
+          axios
+            .post("http://localhost:5005/api/reviews/create", review)
+            .then((response) => {
+              handleAddReviewClose();
+              setRating(0);
+              setComment("");
+              alert("Review submitted successfully");
+            })
+            .catch((error) => {
+              alert("An error occurred while submitting the review");
+            });
+        } else {
+          alert("Please fill in all fields");
+        }
+
     } else {
-      alert("Please fill in all fields");
+      alert("Please log in to submit a review.")
     }
   };
 
@@ -119,6 +136,9 @@ export default function Directory() {
             <br />
             <br />
             <b>Safety Features:</b> {selectedPlayground && selectedPlayground.safetyFeatures}
+            <br />
+            <br />
+            <b>Reviews:</b> {selectedPlayground && selectedPlayground.reviews}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -153,7 +173,7 @@ export default function Directory() {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleAddReviewClose}>Close</Button>
-          <Button onClick={handleAddReviewClose}>Submit</Button>
+          <Button onClick={handleSubmitClick}>Submit</Button>
         </DialogActions>
       </Dialog>
     </>

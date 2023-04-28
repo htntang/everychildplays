@@ -1,28 +1,43 @@
 import Review from '../models/reviewModel.js';
+import Playground from '../models/playgroundModel.js';
 
 // Add a new review
 const createReview = async (req, res) => {
-  const { rating, comment } = req.body;
-  // const userId = req.user._id;
-
   try {
+    const { username, playgroundId, rating, comment } = req.body;
     const review = new Review({
-      //playground,
-      // user: userId,
+      username,
+      playground: playgroundId,
       rating,
       comment,
     });
 
     const savedReview = await review.save();
 
+    // Add the review's ObjectId to the playground's reviews array
+    const playground = await Playground.findById(playgroundId);
+    playground.reviews.push(savedReview._id);
+    await playground.save();
+
     res.status(201).json(savedReview);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
+
+// Get all Reviews
+const getAllReviews = async (req, res) => {
+  try {
+    const reviews = await Review.find();
+    res.json(reviews);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
 };
 
 // Get all reviews for a playground
-const getAllReviews = async (req, res) => {
+const getReviewByPlayground = async (req, res) => {
   const playgroundId = req.params.playgroundId;
 
   try {
@@ -73,5 +88,6 @@ const deleteReview = async (req, res) => {
 
 export { createReview, 
         getAllReviews, 
+        getReviewByPlayground,
         updateReview, 
         deleteReview };

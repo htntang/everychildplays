@@ -1,6 +1,7 @@
 import express from 'express';
 import { createReview, 
         getAllReviews, 
+        getReviewByPlayground,
         updateReview, 
         deleteReview } from '../controllers/reviewController.js';
 
@@ -10,7 +11,10 @@ const reviewRouter = express.Router();
 reviewRouter.post('/create', createReview);
 
 // Get all reviews for a playgorund
-reviewRouter.get('/playgrounds/:playgroundId/reviews', getAllReviews);
+reviewRouter.get('/', getAllReviews);
+
+// Get all reviews for a playgorund
+reviewRouter.get('/playgrounds/:playgroundId/reviews', getReviewByPlayground);
 
 // Update a review by ID
 reviewRouter.patch('/:id', updateReview);
