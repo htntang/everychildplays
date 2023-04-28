@@ -1,23 +1,18 @@
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
-import Dialog from "@mui/material/Dialog";
-import DialogTitle from "@mui/material/DialogTitle";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogActions from "@mui/material/DialogActions";
-
+import { Card, CardActions, CardContent, CardMedia, Typography, Grid } from "@mui/material";
+import { Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText, Button, TextField } from "@mui/material";
+import Rating from "react-rating-stars-component";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 export default function Directory() {
   const [playgrounds, setPlaygrounds] = useState([]);
   const [selectedPlayground, setSelectedPlayground] = useState(null);
-  const [open, setOpen] = useState(false);
+
+  const [openAddReview, setOpenAddReview] = useState(false);
+  const [rating, setRating] = useState(0);
+  const [comment, setComment] = useState("");
+
+  const [openReadMore, setOpenReadMore] = useState(false);
 
   useEffect(() => {
     axios.get("http://localhost:5005/api/playgrounds/").then((response) => {
@@ -25,18 +20,62 @@ export default function Directory() {
     });
   }, []);
 
-  const handleOpen = (playground) => {
+
+  // Add Review functionality
+  const handleAddReview = (playground) => {
     setSelectedPlayground(playground);
-    setOpen(true);
+    setOpenAddReview(true);
   };
 
-  const handleClose = () => {
-    setOpen(false);
+  const handleAddReviewClose = () => {
+    setOpenAddReview(false);
+  };
+  const handleRatingChange = (value) => {
+    setRating(value);
+  };
+
+  const handleCommentChange = (event) => {
+    setComment(event.target.value);
+  };
+
+  const handleSubmitClick = () => {
+    if (rating > 0 && comment !== "") {
+      const review = {
+        //playground_id: playground,
+        rating: rating,
+        comment: comment,
+      };
+      axios
+        .post("http://localhost:5005/api/reviews/create", review)
+        .then((response) => {
+          handleAddReviewClose();
+          setRating(0);
+          setComment("");
+          alert("Review submitted successfully");
+        })
+        .catch((error) => {
+          alert("An error occurred while submitting the review");
+        });
+    } else {
+      alert("Please fill in all fields");
+    }
+  };
+
+
+
+  // Read more functionality
+  const handleReadMoreOpen = (playground) => {
+    setSelectedPlayground(playground);
+    setOpenReadMore(true);
+  };
+
+  const handleReadMoreClose = () => {
+    setOpenReadMore(false);
   };
 
   return (
     <>
-      <h1>Directory & Reviews</h1>
+      <h1>Playground Directory</h1>
 
       <div className="directory-container">
         <Grid container spacing={2} justifyContent="center" alignItems="center">
@@ -53,8 +92,8 @@ export default function Directory() {
                   </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button>Add Review</Button>
-                  <Button size="small" onClick={() => handleOpen(playground)}>
+                  <Button size="small" onClick={() => handleAddReview(playground)}>Add Review</Button>
+                  <Button size="small" onClick={() => handleReadMoreOpen(playground)}>
                     Read More
                   </Button>
                 </CardActions>
@@ -64,7 +103,8 @@ export default function Directory() {
         </Grid>
       </div>
 
-      <Dialog open={open} onClose={handleClose}>
+
+      <Dialog open={openReadMore} onClose={handleReadMoreClose}>
         <DialogTitle>{selectedPlayground && selectedPlayground.name}</DialogTitle>
         <DialogContent>
           <DialogContentText>
@@ -81,7 +121,38 @@ export default function Directory() {
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Close</Button>
+          <Button onClick={handleReadMoreClose}>Close</Button>
+        </DialogActions>
+      </Dialog>
+
+
+      <Dialog open={openAddReview} onClose={handleAddReviewClose}>
+        <DialogTitle>Add a review for {selectedPlayground && selectedPlayground.name}</DialogTitle>
+        <DialogContent>
+        <Rating
+          count={5}
+          size={48}
+          activeColor="#ffd700"
+          isHalf={true}
+          value={rating}
+          onChange={handleRatingChange}
+        />
+        <br />
+        <br />
+        <TextField
+          id="comment"
+          label="Comment"
+          multiline
+          rows={4}
+          fullWidth
+          value={comment}
+          onChange={handleCommentChange}
+        />
+         
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleAddReviewClose}>Close</Button>
+          <Button onClick={handleAddReviewClose}>Submit</Button>
         </DialogActions>
       </Dialog>
     </>

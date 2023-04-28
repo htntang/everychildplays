@@ -12,7 +12,7 @@ function PlaygroundMap() {
     mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
     const map = new mapboxgl.Map({
       container: "map",
-      style: "mapbox://styles/inclusiveplayworks/clgsh6lgj000z01q1apkg1ft1",
+      style: "mapbox://styles/ollysamm/clgmqv6wz001f01pl6kx5gu1y",
       center: [-114.0708, 51.0486],
       zoom: 10
     });
