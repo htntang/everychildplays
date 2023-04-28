@@ -3,15 +3,9 @@ import React from "react";
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 
 export default function SearchPlaygrounds() {
-    const [searchTerm, setSearchTerm] = useState ("");
-    
-const rows = [
-    { id: 1, Location: 'Hello', AccessibilityFeatures: 'World' },
-    { id: 2, Location: 'Hello2', AccessibilityFeatures: 'World2' },
-    { id: 3, Location: 'Hello3', AccessibilityFeatures: 'World3' },
-    { id: 4, Location: 'Hello3', AccessibilityFeatures: 'World3' },
    
-  ];
+    const [rows, setRows] = useState([])
+
 const columns = [
     {field:'Name', headerName: 'Name'},
     {field:'Quadrant', headerName:'Quadrant'},
@@ -23,12 +17,15 @@ const columns = [
 
 const [fetchedData, setFetchedData] = React.useState(null);
 
-
+useEffect(() => {
+    populateRows()
+}, [])
         function populateRows(){
             fetch('http://localhost:5005/api/playgrounds')
             .then(response => response.json()) 
       .then(data => { console.log(data
         );
+        setRows(data)
         setFetchedData({
         dataSet: data, 
         rowLength: 100,
@@ -39,16 +36,19 @@ const [fetchedData, setFetchedData] = React.useState(null);
         <>
         <div>
             <DataGrid 
-            sx = {{ fontWeight:'bold', backgroundColor:'#ffffff'}}
+            sx = {{backgroundColor:'#ffffff', height:600, width: "100%"}}
             rows={rows}
+            slots={{toolbar: GridToolbar}} 
+            getRowId={(row) => row._id}
             columns={[
-                    {field:'Name', width:150},
-                    {field:'Address', width:200},
-                    {field:'Quadrant', width:100},
-                    {field:'Neighbourhood', width:200},
-                    {field:'Age Range', width: 100},
-                    {field:'Accessibility Features', width:200}
-                    ]} />
+                    {field:'name', width:150, headerName: 'Name'},
+                    {field:'location', width:200, headerName: 'Address'},
+                    {field:'quadrant', width:100, headerName: 'Quadrant'},
+                    {field:'neighbourhood', width:200, headerName: 'Neighbourhood'},
+                    {field:'ageRange', width: 100, headerName: 'Age Range'},
+                    {field:'accessibilityFeatures', width:200, headerName: 'Accessibility Features'},
+                    {field:'safetyFeatures', width:200, headerName: 'Safety Features'}
+                    ]} />   
         </div>
         </>
     );
