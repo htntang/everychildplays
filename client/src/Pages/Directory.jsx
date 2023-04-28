@@ -133,7 +133,7 @@ export default function Directory() {
           count={5}
           size={48}
           activeColor="#ffd700"
-          isHalf={true}
+          isHalf={false}
           value={rating}
           onChange={handleRatingChange}
         />
