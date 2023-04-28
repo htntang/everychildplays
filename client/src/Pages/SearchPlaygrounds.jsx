@@ -43,9 +43,9 @@ const [fetchedData, setFetchedData] = React.useState(null);
             rows={rows}
             columns={[
                     {field:'Name', width:150},
-                    {field:'Address', width:200},
+                    {field:'Address', width:150},
                     {field:'Quadrant', width:100},
-                    {field:'Neighbourhood', width:200},
+                    {field:'Neighbourhood', width:150},
                     {field:'Age Range', width: 100},
                     {field:'Accessibility Features', width:200}
                     ]} />
