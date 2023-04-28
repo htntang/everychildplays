@@ -1,6 +1,7 @@
 import { Card, CardActions, CardContent, CardMedia, Typography, Grid } from "@mui/material";
 import { Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText, Button, TextField } from "@mui/material";
 import Rating from "react-rating-stars-component";
+import ReactStars from "react-rating-stars-component";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -13,6 +14,8 @@ export default function Directory() {
   const [comment, setComment] = useState("");
 
   const [openReadMore, setOpenReadMore] = useState(false);
+
+  const [getReviews, setGetReviews] = useState([]);
 
   useEffect(() => {
     axios.get("http://localhost:5005/api/playgrounds/").then((response) => {
@@ -80,8 +83,16 @@ export default function Directory() {
 
 
   // Read more functionality
-  const handleReadMoreOpen = (playground) => {
+  const handleReadMoreOpen = async (playground) => {
     setSelectedPlayground(playground);
+
+    try {
+      const response = await axios.get(`http://localhost:5005/api/playgrounds/${playground._id}/reviews`);
+      setGetReviews(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+
     setOpenReadMore(true);
   };
 
@@ -138,7 +149,21 @@ export default function Directory() {
             <b>Safety Features:</b> {selectedPlayground && selectedPlayground.safetyFeatures}
             <br />
             <br />
-            <b>Reviews:</b> {selectedPlayground && selectedPlayground.reviews}
+            <b>Reviews:</b>
+            {getReviews.map((review) => (
+              <div key={review._id}>
+                <br />
+                <b>{review.username}</b>
+                <ReactStars
+                  count={5}
+                  size={24}
+                  activeColor="#ffd700"
+                  value={review.rating}
+                  edit={false}
+                />
+                {review.comment}
+              </div>
+            ))}
           </DialogContentText>
         </DialogContent>
         <DialogActions>

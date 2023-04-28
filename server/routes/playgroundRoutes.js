@@ -11,7 +11,7 @@ const playgroundRouter = express.Router();
 
 playgroundRouter.post('/create', createPlayground);
 playgroundRouter.get('/', getAllPlaygrounds);
-playgroundRouter.get('/', getPlaygroundReviews);
+playgroundRouter.get('/:id/reviews', getPlaygroundReviews);
 playgroundRouter.get('/:id', getPlaygroundById);
 playgroundRouter.get('/name/:name', getPlaygroundByName);
 playgroundRouter.patch('/:id', updatePlaygroundById);
