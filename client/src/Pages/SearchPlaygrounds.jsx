@@ -38,8 +38,14 @@ useEffect(() => {
             <DataGrid 
             sx = {{backgroundColor:'#ffffff', height:600, width: "100%"}}
             rows={rows}
-            slots={{toolbar: GridToolbar}} 
             getRowId={(row) => row._id}
+            slots={{toolbar: GridToolbar}} 
+            slotProps={{
+                toolbar: {
+                  showQuickFilter: true,
+                },
+              }}
+            
             columns={[
                     {field:'name', width:150, headerName: 'Name'},
                     {field:'location', width:200, headerName: 'Address'},
