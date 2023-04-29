@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 import React from "react";
-import { DataGrid, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid, GridToolbar} from '@mui/x-data-grid';
 
 export default function SearchPlaygrounds() {
    
@@ -43,6 +43,7 @@ useEffect(() => {
             slotProps={{
                 toolbar: {
                   showQuickFilter: true,
+                  quickFilterProps: { debounceMs: 500 },
                 },
               }}
             
