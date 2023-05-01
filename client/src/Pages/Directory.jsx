@@ -143,10 +143,10 @@ export default function Directory() {
             <b>Description:</b> {selectedPlayground && selectedPlayground.description}
             <br />
             <br />
-            <b>Accessibility Features:</b> {selectedPlayground && selectedPlayground.accessibilityFeatures}
+            <b>Accessibility Features:</b> {selectedPlayground && selectedPlayground.accessibilityFeatures && selectedPlayground.accessibilityFeatures.join(", ")}
             <br />
             <br />
-            <b>Safety Features:</b> {selectedPlayground && selectedPlayground.safetyFeatures}
+            <b>Safety Features:</b> {selectedPlayground && selectedPlayground.safetyFeatures && selectedPlayground.safetyFeatures.join(", ")}
             <br />
             <br />
             <b>Reviews:</b>
