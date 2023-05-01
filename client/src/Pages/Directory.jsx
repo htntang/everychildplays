@@ -5,16 +5,16 @@ import ReactStars from "react-rating-stars-component";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+import ReviewPopup from "../Components/ReviewPopup";
+
 export default function Directory() {
   const [playgrounds, setPlaygrounds] = useState([]);
   const [selectedPlayground, setSelectedPlayground] = useState(null);
 
   const [openAddReview, setOpenAddReview] = useState(false);
-  const [rating, setRating] = useState(0);
-  const [comment, setComment] = useState("");
+  
 
   const [openReadMore, setOpenReadMore] = useState(false);
-
   const [getReviews, setGetReviews] = useState([]);
 
   useEffect(() => {
@@ -23,63 +23,17 @@ export default function Directory() {
     });
   }, []);
 
-
-  // Add Review functionality
-  const handleAddReview = (playground) => {
-    setSelectedPlayground(playground);
-    setOpenAddReview(true);
-  };
-
-  const handleAddReviewClose = () => {
-    setOpenAddReview(false);
-  };
-
-  let username = "";
-  const token = localStorage.getItem("token");
-  if (token) {
-    const payload = token.split(".")[1];
-    const decodedPayload = atob(payload);
-    const { username: decodedUsername } = JSON.parse(decodedPayload);
-    username = decodedUsername;
-  }
+    // Add Review functionality
+    const handleAddReview = (playground) => {
+      setSelectedPlayground(playground);
+      setOpenAddReview(true);
+    };
+  
+    const handleAddReviewClose = () => {
+      setOpenAddReview(false);
+    };
 
 
-  const handleRatingChange = (value) => {
-    setRating(value);
-  };
-
-  const handleCommentChange = (event) => {
-    setComment(event.target.value);
-  };
-
-  const handleSubmitClick = () => {
-    if (localStorage.getItem("token")) {
-        if (rating > 0 && comment !== "") {
-          const review = {
-            username: username,
-            playgroundId: selectedPlayground._id,
-            rating: rating,
-            comment: comment,
-          };
-          axios
-            .post("http://localhost:5005/api/reviews/create", review)
-            .then((response) => {
-              handleAddReviewClose();
-              setRating(0);
-              setComment("");
-              alert("Review submitted successfully");
-            })
-            .catch((error) => {
-              alert("An error occurred while submitting the review");
-            });
-        } else {
-          alert("Please fill in all fields");
-        }
-
-    } else {
-      alert("Please log in to submit a review.")
-    }
-  };
 
 
   // Read more functionality
@@ -171,36 +125,8 @@ export default function Directory() {
         </DialogActions>
       </Dialog>
 
-
-      <Dialog open={openAddReview} onClose={handleAddReviewClose}>
-        <DialogTitle>Add a review for {selectedPlayground && selectedPlayground.name}</DialogTitle>
-        <DialogContent>
-        <Rating
-          count={5}
-          size={48}
-          activeColor="#ffd700"
-          isHalf={false}
-          value={rating}
-          onChange={handleRatingChange}
-        />
-        <br />
-        <br />
-        <TextField
-          id="comment"
-          label="Comment"
-          multiline
-          rows={4}
-          fullWidth
-          value={comment}
-          onChange={handleCommentChange}
-        />
-         
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleAddReviewClose}>Close</Button>
-          <Button onClick={handleSubmitClick}>Submit</Button>
-        </DialogActions>
-      </Dialog>
+      <ReviewPopup selectedPlayground={selectedPlayground} handleAddReviewClose={handleAddReviewClose} openAddReview={openAddReview} />
+      
     </>
   );
 }
