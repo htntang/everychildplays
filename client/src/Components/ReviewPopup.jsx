@@ -1,7 +1,5 @@
-import { Card, CardActions, CardContent, CardMedia, Typography, Grid } from "@mui/material";
 import { Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText, Button, TextField } from "@mui/material";
 import Rating from "react-rating-stars-component";
-import ReactStars from "react-rating-stars-component";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
