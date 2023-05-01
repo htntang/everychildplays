@@ -1,6 +1,6 @@
 import { Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText, Button, TextField } from "@mui/material";
 import ReactStars from "react-rating-stars-component";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export default function ReadMorePopup(props) {
   const handleReadMoreClose = props.handleReadMoreClose

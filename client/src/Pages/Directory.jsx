@@ -10,7 +10,7 @@ export default function Directory() {
   const [selectedPlayground, setSelectedPlayground] = useState(null);
 
   const [openAddReview, setOpenAddReview] = useState(false);
-  
+
   const [openReadMore, setOpenReadMore] = useState(false);
   const [getReviews, setGetReviews] = useState([]);
 
@@ -83,7 +83,7 @@ export default function Directory() {
 
       <ReviewPopup selectedPlayground={selectedPlayground} handleAddReviewClose={handleAddReviewClose} openAddReview={openAddReview} />
 
-        <ReadMorePopup selectedPlayground={selectedPlayground} handleReadMoreClose={handleReadMoreClose} openReadMore={openReadMore} getReviews={getReviews} />
+      <ReadMorePopup selectedPlayground={selectedPlayground} handleReadMoreClose={handleReadMoreClose} openReadMore={openReadMore} getReviews={getReviews} />
       
     </>
   );
