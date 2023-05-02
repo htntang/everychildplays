@@ -23,7 +23,7 @@ export default function Team() {
                 <div className="column">
                 <h2>Oladimeji Falusi</h2>
                 <img className="headshot" src="https://i.imgur.com/nWlktNy.jpg"></img>
-                <body className="bio">"Insert Bio Here"
+                <body className="bio">"Insert Biography Here"
                 <br></br>
                 <br></br>
                 <a href="https://www.linkedin.com/in/oladimeji-falusi-0251a225a/">Connect with Oladimeji on LinkedIn!</a>
