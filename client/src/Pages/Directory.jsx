@@ -1,6 +1,7 @@
 import { Card, CardActions, CardContent, CardMedia, Typography, Grid } from "@mui/material";
 import { Dialog, DialogTitle, DialogContent, DialogActions, DialogContentText, Button, TextField } from "@mui/material";
 import Rating from "react-rating-stars-component";
+import ReactStars from "react-rating-stars-component";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -13,6 +14,8 @@ export default function Directory() {
   const [comment, setComment] = useState("");
 
   const [openReadMore, setOpenReadMore] = useState(false);
+
+  const [getReviews, setGetReviews] = useState([]);
 
   useEffect(() => {
     axios.get("http://localhost:5005/api/playgrounds/").then((response) => {
@@ -30,6 +33,17 @@ export default function Directory() {
   const handleAddReviewClose = () => {
     setOpenAddReview(false);
   };
+
+  let username = "";
+  const token = localStorage.getItem("token");
+  if (token) {
+    const payload = token.split(".")[1];
+    const decodedPayload = atob(payload);
+    const { username: decodedUsername } = JSON.parse(decodedPayload);
+    username = decodedUsername;
+  }
+
+
   const handleRatingChange = (value) => {
     setRating(value);
   };
@@ -39,32 +53,46 @@ export default function Directory() {
   };
 
   const handleSubmitClick = () => {
-    if (rating > 0 && comment !== "") {
-      const review = {
-      //playground_id: playground,
-        rating: rating,
-        comment: comment,
-      };
-      axios
-        .post("http://localhost:5005/api/reviews/create", review)
-        .then((response) => {
-          handleAddReviewClose();
-          setRating(0);
-          setComment("");
-          alert("Review submitted successfully");
-        })
-        .catch((error) => {
-          alert("An error occurred while submitting the review");
-        });
+    if (localStorage.getItem("token")) {
+        if (rating > 0 && comment !== "") {
+          const review = {
+            username: username,
+            playgroundId: selectedPlayground._id,
+            rating: rating,
+            comment: comment,
+          };
+          axios
+            .post("http://localhost:5005/api/reviews/create", review)
+            .then((response) => {
+              handleAddReviewClose();
+              setRating(0);
+              setComment("");
+              alert("Review submitted successfully");
+            })
+            .catch((error) => {
+              alert("An error occurred while submitting the review");
+            });
+        } else {
+          alert("Please fill in all fields");
+        }
+
     } else {
-      alert("Please fill in all fields");
+      alert("Please log in to submit a review.")
     }
   };
 
 
   // Read more functionality
-  const handleReadMoreOpen = (playground) => {
+  const handleReadMoreOpen = async (playground) => {
     setSelectedPlayground(playground);
+
+    try {
+      const response = await axios.get(`http://localhost:5005/api/playgrounds/${playground._id}/reviews`);
+      setGetReviews(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+
     setOpenReadMore(true);
   };
 
@@ -115,10 +143,27 @@ export default function Directory() {
             <b>Description:</b> {selectedPlayground && selectedPlayground.description}
             <br />
             <br />
-            <b>Accessibility Features:</b> {selectedPlayground && selectedPlayground.accessibilityFeatures}
+            <b>Accessibility Features:</b> {selectedPlayground && selectedPlayground.accessibilityFeatures && selectedPlayground.accessibilityFeatures.join(", ")}
             <br />
             <br />
-            <b>Safety Features:</b> {selectedPlayground && selectedPlayground.safetyFeatures}
+            <b>Safety Features:</b> {selectedPlayground && selectedPlayground.safetyFeatures && selectedPlayground.safetyFeatures.join(", ")}
+            <br />
+            <br />
+            <b>Reviews:</b>
+            {getReviews.map((review) => (
+              <div key={review._id}>
+                <br />
+                <b>{review.username}</b>
+                <ReactStars
+                  count={5}
+                  size={24}
+                  activeColor="#ffd700"
+                  value={review.rating}
+                  edit={false}
+                />
+                {review.comment}
+              </div>
+            ))}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -153,7 +198,7 @@ export default function Directory() {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleAddReviewClose}>Close</Button>
-          <Button onClick={handleAddReviewClose}>Submit</Button>
+          <Button onClick={handleSubmitClick}>Submit</Button>
         </DialogActions>
       </Dialog>
     </>

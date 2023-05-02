@@ -44,12 +44,12 @@ export default function Header() {
           </>
         ) : (
           <>
-            <Link to="/login" className="button-navigation">
-              Login 
+            <Link to="/login" class="button-navigation">
+              <b>Login | </b>
             </Link>
-            <Link to="/register" className="button-navigation">
-              Register
-            </Link>
+            <Link to="/register" class="button-navigation">
+              <b>Register</b>
+              </Link>
           </>
         )}
       </nav>

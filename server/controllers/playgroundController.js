@@ -21,6 +21,24 @@ const getAllPlaygrounds = async (req, res) => {
   }
 };
 
+// Get playground reviews
+async function getPlaygroundReviews(req, res) {
+  try {
+    const playgroundId = req.params.id;
+    
+    const playground = await Playground.findById(playgroundId).populate('reviews');
+    if (!playground) {
+      return res.status(404).json({ error: 'Playground not found' });
+    }
+
+    const reviews = playground.reviews;
+    res.status(200).json(reviews);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+}
+
+
 // Get a single playground by id
 const getPlaygroundById = async (req, res) => {
   try {
@@ -77,6 +95,7 @@ const deletePlaygroundById = async (req, res) => {
 
 export { createPlayground, 
         getAllPlaygrounds, 
+        getPlaygroundReviews,
         getPlaygroundById,
         getPlaygroundByName, 
         updatePlaygroundById, 

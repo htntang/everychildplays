@@ -18,6 +18,7 @@ const RegistrationPage = () => {
 
   const [submitting, setSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -45,7 +46,12 @@ const RegistrationPage = () => {
       });
       setFormErrors({});
     } catch (error) {
-      alert('Something went wrong. Please try again later.');
+      if (error.response) {
+        setSubmitError(error.response.data.message);
+      } else {
+        alert('Something went wrong. Please try again later.');
+      }
+      
     } finally {
       setSubmitting(false);
     }
@@ -77,6 +83,7 @@ const RegistrationPage = () => {
     <div className="register-form">
       <h2>Create an Account</h2>
       {submitSuccess && <div className="alert alert-success" style={{ color: 'green'}}>Your account has been created!</div>}
+      {submitError && <div className="alert alert-danger" style={{ color: 'red'}}>{submitError}</div>}
       <form className="register" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name</label>
