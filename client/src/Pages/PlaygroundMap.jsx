@@ -16,7 +16,6 @@ const PlaygroundMap = () => {
   const [lat, setLat] = useState(51.0453775);
   const [zoom, setZoom] = useState(10);
 
-  const [markers, setMarkers] = useState([]);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
@@ -26,6 +25,7 @@ const PlaygroundMap = () => {
       center: [lng, lat],
       zoom: zoom,
     })
+
     .addControl(
       new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -37,15 +37,16 @@ const PlaygroundMap = () => {
       })
     )
 
-    // .addControl(new mapboxgl.NavigationControl({ showSearch: false }))
+    // .addControl(new mapboxgl.NavigationControl())
     // .addControl(
     //   new MapboxGeocoder({
     //     accessToken: mapboxgl.accessToken,
     //     mapboxgl: mapboxgl,
+    //     showSearch: false,
     //   }),
     //   "top-left"
     // )
-    
+
     .addControl(
       new MapboxDirections({
         accessToken: mapboxgl.accessToken,
@@ -61,6 +62,8 @@ const PlaygroundMap = () => {
           "http://localhost:5005/api/playgrounds"
         );
         const playgrounds = response.data;
+
+        
 
         playgrounds.forEach((playground) => {
           const markerElement = document.createElement("div");
@@ -78,7 +81,7 @@ const PlaygroundMap = () => {
                 `<div style="color: black; background-color: rgba(0, 0, 0, 0);"><img src="${playground.pictures}" alt="${playground.name}" /><h3>${playground.name}</h3><p>${playground.location}</p></div>`
               )
             )
-            .addTo(map.current);
+            .addTo(map.current)
         });
       } catch (error) {
         console.error(error);
@@ -86,9 +89,12 @@ const PlaygroundMap = () => {
     }
 
     fetchPlaygrounds();
+
+
+    
   }, []);
 
-  return <div ref={mapContainer} style={{ height: "85vh" }} />;
+  return <div ref={mapContainer} style={{ height: "90vh" }} />;
 };
 
 export default PlaygroundMap;

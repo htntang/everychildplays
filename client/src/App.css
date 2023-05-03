@@ -237,4 +237,5 @@ div.reviews{
   height: 50px;
   background-size: contain;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
