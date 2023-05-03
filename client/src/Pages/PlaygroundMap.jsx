@@ -18,13 +18,13 @@ const PlaygroundMap = () => {
 
 
   useEffect(() => {
-    if (map.current) return; // initialize map only once
-    map.current = new mapboxgl.Map({
-      container: mapContainer.current,
-      style: "mapbox://styles/mapbox/outdoors-v12",
-      center: [lng, lat],
-      zoom: zoom,
-    })
+    mapboxgl.accessToken = "pk.eyJ1IjoiaHRudGFuZyIsImEiOiJjbGduNmNibGYwNTE5M3Bwb3N1bHFvMmY2In0.6MozJ5eRM-X3CXnMJSqBnA"
+    const map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/ollysamm/clgmqv6wz001f01pl6kx5gu1y",
+      center: [-114.0708, 51.0486],
+      zoom: 10
+    });
 
       // add geolocation
     .addControl(
