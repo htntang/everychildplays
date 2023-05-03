@@ -26,6 +26,7 @@ const PlaygroundMap = () => {
       zoom: zoom,
     })
 
+      // add geolocation
     .addControl(
       new mapboxgl.GeolocateControl({
         positionOptions: {
@@ -36,7 +37,7 @@ const PlaygroundMap = () => {
         showUserLocation: true,
       })
     )
-
+      //add navigation control
     // .addControl(new mapboxgl.NavigationControl())
     // .addControl(
     //   new MapboxGeocoder({
@@ -47,6 +48,7 @@ const PlaygroundMap = () => {
     //   "top-left"
     // )
 
+      //add directions
     .addControl(
       new MapboxDirections({
         accessToken: mapboxgl.accessToken,
@@ -56,14 +58,13 @@ const PlaygroundMap = () => {
       "top-left"
     );
 
+      // add playground location markers
     async function fetchPlaygrounds() {
       try {
         const response = await axios.get(
           "http://localhost:5005/api/playgrounds"
         );
         const playgrounds = response.data;
-
-        
 
         playgrounds.forEach((playground) => {
           const markerElement = document.createElement("div");
@@ -89,8 +90,6 @@ const PlaygroundMap = () => {
     }
 
     fetchPlaygrounds();
-
-
     
   }, []);
 
