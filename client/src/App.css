@@ -133,7 +133,7 @@ input{
 }
 
 button{
-  width: 100%;
+  /* width: 100%; */
   display: block;
   background-color: #DD6E42;
   color: #fffff0;
