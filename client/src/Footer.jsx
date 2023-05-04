@@ -21,6 +21,8 @@ export default function Footer(){
             <a href="/submit" className="footer-link">Submit a Playground</a>
             <br></br>
             <a href="/resources" className="footer-link">Resources</a>
+            <br></br>
+            <a href="/books" className="footer-link">Books</a>
           </div>
           </div>
 
