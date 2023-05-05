@@ -14,16 +14,16 @@ export default function Footer(){
           <div className="column">
             <a href="/about" className="footer-link">About Us</a>
             <br></br>
-            <a href="/team" className="footer-link">Meet the Team</a>
+            <a href="/books" className="footer-link">Books</a>
             <br></br>
             <a href="/contactus" className="footer-link">Contact Us</a>
             <br></br>
-            <a href="/submit" className="footer-link">Submit a Playground</a>
+            <a href="/team" className="footer-link">Meet the Team</a>
             <br></br>
             <a href="/resources" className="footer-link">Resources</a>
             <br></br>
-            <a href="/books" className="footer-link">Books</a>
-          </div>
+            <a href="/submit" className="footer-link">Submit a Playground</a>
+            </div>
           </div>
 
         </footer>
