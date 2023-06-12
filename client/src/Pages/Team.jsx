@@ -8,7 +8,7 @@ export default function Team() {
         <div className="row">
                 <div className="column">
                 <h2>Hikmah Adepoju</h2>
-                <img className="headshot" src="https://imgur.com/bvst2aW"></img>
+                <img className="headshot" src="https://i.imgur.com/bvst2aW.jpg"></img>
                 <body className="bio">Hikmah is a highly motivated individual currently studying to become a Full-stack Developer, I am actively seeking employment opportunities. My background is in FinTech and Business, combined with over 3 years of customer service experience and 1 year of financial crime investigation, has provided me with a unique skill set and perspective. 
                 <br></br> 
                 <br></br>Hikmah's dedication to professional development, combined with my open-minded and personable nature, make me an excellent candidate for any team. I am excited to bring my expertise and enthusiasm to a dynamic organization.

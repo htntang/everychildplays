@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Header from './Header.jsx';
-import Post from './Post.jsx';
+// import Header from './Header.jsx';
+// import Post from './Post.jsx';
 import {Route, Routes} from "react-router-dom";
 import Layout from './Layout';
 import IndexPage from './Pages/IndexPage';
